@@ -1,3 +1,3 @@
 # integrador
-Poryecto Integrador. Primer sprint.
+Proyecto Integrador. Primer sprint.
 Descripcion del proyecto :
