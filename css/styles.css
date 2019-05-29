@@ -64,4 +64,7 @@ section article{
 	border: black 2px dashed;
 	margin: 5px;
 	float:left;
+	color: black;
+	text-align: left;
+
 }
