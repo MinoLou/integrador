@@ -1,9 +1,7 @@
 <?php
-if ($_POST && strlen($_POST["user"]) == 0) {
+if ($_POST && strlen($_POST["user"]) == 0){
    echo "Completa el usuario, por favor";
-
  }
-
 
  ?>
 
