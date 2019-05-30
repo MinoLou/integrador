@@ -2,13 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Preguntas frecuentes</title>
-  </head>
-  <body>
-  <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
       <title>Proyecto</title>
     	<link rel="stylesheet" href="css/styles.css">
   </head>
