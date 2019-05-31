@@ -8,7 +8,7 @@
   <body>
   <header class="page-header">
     <div class="page-header-container container">
-      <a id="logo" href="proyecto.php">ConstruWorld</a>
+      <a id="logo" href="index.php">ConstruWorld</a>
       <nav class="main-nav">
         <ul>
           <li><a class="nav-link nav1" href="preguntas.php">Preguntas Frecuentes</a></li>
