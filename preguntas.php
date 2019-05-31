@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-      <title>Proyecto</title>
-    	<link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-<header class="container">
-<nav>
-  <ul>
-    <li><a id="logo" href="nosotros">Construworld</a></li>
-    <li><a class="nav1" href="preguntas.php">Preguntas Frecuentes</a></li>
-    <li><a class="nav1" href="servicios.php">Servicios</a></li>
-    <li><a class="nav1" href="registro.php">Registracion</a></li>
-    <li><a class="nav1" href="login.php">Login</a></li>
-  </ul>
-</nav>
-</header>
+<?php require('header.php'); ?>
+
 <div style="color:white;"> <!-- section hace bolonqui -->
 	  <h1>Preguntas frecuentes</h1></br>
 	  <h2>¿Cómo selecciona Construworld sus proveedores?</h2></br>
@@ -44,8 +27,5 @@
     <h3>Si vos o tu empresa quieren formar parte de Construworld, contactanos a ... y comenzaremos con el proceso de admisión.</h3>
     <br>
 </div>
-<footer>
-  <a class="foot" href="contacto.php">Contacto</a>
-</footer>
-  </body>
-</html>
+
+<?php require('footer.php'); ?>

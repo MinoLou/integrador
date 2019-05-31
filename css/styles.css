@@ -7,6 +7,11 @@ body{
 	background-size: cover;
 }
 
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 header{
 	background-color: vec3(0.97, 0.9, 0.87);
 	padding: 1px;
