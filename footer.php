@@ -1,6 +1,8 @@
   </div>
   <footer class="page-footer">
-    <a href="contacto.php">Contacto</a>
+    <div class="container">
+      <a href="contacto.php">Contacto</a>      
+    </div>
   </footer>
   </body>
 </html>

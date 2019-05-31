@@ -7,14 +7,16 @@
   </head>
   <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <ul>
-        <li><a id="logo" href="proyecto.php">Construworld</a></li>
-        <li><a class="nav1" href="preguntas.php">Preguntas Frecuentes</a></li>
-        <li><a class="nav1" href="servicios.php">Servicios</a></li>
-        <li><a class="nav1" href="registro.php">Registracion</a></li>
-        <li><a class="nav1" href="login.php">Login</a></li>
-      </ul>
-    </nav>
+    <div class="page-header-container container">
+      <a id="logo" href="proyecto.php">ConstruWorld</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a class="nav-link nav1" href="preguntas.php">Preguntas Frecuentes</a></li>
+          <li><a class="nav-link nav1" href="servicios.php">Servicios</a></li>
+          <li><a class="nav-link nav1" href="registro.php">Registracion</a></li>
+          <li><a class="nav-link nav1" href="login.php">Login</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <div class="container">

@@ -1,6 +1,6 @@
 <?php require('header.php'); ?>
 
-<div style="color:white;"> <!-- section hace bolonqui -->
+<div> <!-- section hace bolonqui -->
 	  <h1>Preguntas frecuentes</h1></br>
 	  <h2>¿Cómo selecciona Construworld sus proveedores?</h2></br>
 		<h3>Mediante una entrevista en profundidad se evalúa su capacidad técnica y operativa, honestidad y cordialidad. También se investigan referencias e historial laboral.

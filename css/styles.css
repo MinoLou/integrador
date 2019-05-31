@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans&display=swap');
+/*
+	Fuentes del proyecto:
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Crimson Text', serif;
+*/
+
 * {
 	box-sizing: border-box;
 }
 
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
 body{
-	background-image: url("../images/bkg.jpg");
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
 	background-size: cover;
+	background-color: #fcfcfc;
+}
+
+h1, h2, h3 {
+	font-family: 'Crimson Text', serif;
 }
 
 .container {
@@ -12,52 +34,68 @@ body{
 	margin: 0 auto;
 }
 
-header{
-	background-color: vec3(0.97, 0.9, 0.87);
-	padding: 1px;
+.page-header {
+	height: 160px;
 	margin-bottom: 10px;
+	background-image: url('../images/patron-ladrillos.jpg');
+	border-bottom: 1px solid #999;
 }
 
-.nav1{
-	padding: 20px;
-	background-color: #FFF;
-	opacity: 0.5;
-	color: black;
-	margin-right: 75px;
+.page-header-container {
+	display: flex;
+	height: 100%;
+	padding-bottom: 20px;
+	align-items: flex-end;
 }
-nav ul{
+
+#logo {
+
+}
+
+.main-nav {
+	width: 100%;
+}
+
+.main-nav ul{
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
-	overflow: hidden;
+	display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
-nav ul li{
-	float: left;
-	width: 20%;
+.main-nav li {
+	margin: 0 20px;
 }
 
-nav ul li a{
+.main-nav a {
 	display: block;
 	font-family: sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: bold;
-	color: white;
-	flex-direction: row;
-	justify-content: space-around;
+	text-transform: uppercase;
+	color: #000;
 }
 
 #logo{
 	font-family: sans-serif;
-	color: white;
+	color: #000;
 	font-size: 35px;
 	font-style: normal;
 	font-weight: bold;
 }
 
+.page-footer {
+	height: 80px;
+	margin-top: 10px;
+	background-image: url('../images/patron-ladrillos.jpg');
+	border-top: 1px solid #999;
+}
 
 footer a{
 	display: block;
-	background-color: rgb(139, 155, 156);
-	color: gainsboro;
+	color: #000;
 	padding: 10px;
 	margin-top: 10px;
 	margin-bottom: auto;
@@ -90,6 +128,6 @@ section article a{
 	float: right;
 	padding: 20px;
 	text-decoration: none;
-	color: #FFF;
+	color: #000;
 	background-color: orange;
 }
