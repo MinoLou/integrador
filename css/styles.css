@@ -32,6 +32,43 @@ h1, h2, h3 {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	overflow: hidden;
+}
+
+.profile-container {
+	overflow: hidden;
+}
+
+.side-menu {
+	background-color: green;
+	width: 15%;
+	float: left;
+}
+
+.side-menu-button {
+	background-color: blue;
+	width: 100%;
+	height: 50px;
+	padding: 5px;
+	color: white;
+	text-align: center;
+}
+
+.side-menu-button:hover {
+	background-color: red;
+}
+
+.main-profile {
+	float: left;
+	background-color: yellow;
+	width: 75%;
+}
+
+.profile-picture {
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-header {
