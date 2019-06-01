@@ -37,11 +37,13 @@ h1, h2, h3 {
 
 .profile-container {
 	overflow: hidden;
+	background-color: yellow;
 }
 
 .side-menu {
-	background-color: green;
+	background-color: yellow;
 	width: 15%;
+	height: 500px;
 	float: left;
 }
 
@@ -61,7 +63,8 @@ h1, h2, h3 {
 .main-profile {
 	float: left;
 	background-color: yellow;
-	width: 75%;
+	width: 85%;
+	/*height: 500px;*/
 }
 
 .profile-picture {
@@ -95,7 +98,7 @@ h1, h2, h3 {
 }
 
 .page-header {
-	height: 160px;
+	height: 100px; /*Se lo bajé de 160 a 100 porque me parecía mucho. Discutible. Firma: Leandro*/
 	margin-bottom: 10px;
 	background-image: url('../images/patron-ladrillos.jpg');
 	border-bottom: 1px solid #999;

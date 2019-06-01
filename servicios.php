@@ -1,7 +1,6 @@
 <?php require('header.php'); ?>
 
-<h2></h2>
-<section class="profile-container">
+<div class="profile-container">
 	<div class="side-menu">
 		<div class="side-menu-button">Item 1</div>
 		<div class="side-menu-button">Item 2</div>
@@ -53,7 +52,6 @@
 			<button class="service-tab-button">Ver usuario</button>
 		</div>
 	</div>
-</section>
-<br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
 <?php require('footer.php'); ?>
