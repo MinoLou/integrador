@@ -40,28 +40,25 @@
 <br><br>
 
 <section class="container">
-<article class="">
-<h3><b>Nuestro Trabajo</b></h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
-<p><a href="#">Ver mas</a></p>
-
+<article class="cuadrito">
+	<h3><b>Nuestro Trabajo</b></h3>
+	<p>Poner en contacto a los mejores profesionales del rubro y cooordinarlos para llevar a cabo proyectos eficientemente.</p>
+	<p><a href="#">Ver mas</a></p>
 </article>
-<article class="">
-  <h3><b>Equipo</b></h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
-  <p><a href="#">Ver mas</a></p>
-
+<article class="cuadrito">
+	<h3><b>Equipo</b></h3>
+	<p>Somos un grupo de profesionales de las ciencias informáticas con aspiraciones de dominar el mundo comenzando por el rubro inmuebles.</p>
+	<p><a href="#">Ver mas</a></p>
 </article>
-<article class="">
-  <h3><b>Blog</b></h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
-  <p><a href="#">Ver mas</a></p>
-
+<article class="cuadrito">
+	<h3><b>Blog</b></h3>
+	<p>Podés seguirnos en Facebook e Instagram (@construworld)</p>
+	<p><a href="#">Ver mas</a></p>
 </article>
-<article class="">
-  <h3><b>Algo mas</b></h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
-  <p><a href="#">Ver mas</a></p>
+<article class="cuadrito">
+	<h3><b>Algo más</b></h3>
+	<p>Podés comprar y vender materiales, obtener asesoramiento legal y donarnos inmuebles o porcentajes de los mismos, así no laburamos más.</p>
+	<p><a href="#">Ver más</a></p>
 </article>
 </section>
 
