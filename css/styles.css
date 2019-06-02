@@ -99,7 +99,7 @@ h1, h2, h3 {
 
 .page-header {
 	height: 100px; /*Se lo bajé de 160 a 100 porque me parecía mucho. Discutible. Firma: Leandro*/
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	background-image: url('../images/patron-ladrillos.jpg');
 	border-bottom: 1px solid #999;
 }
@@ -109,6 +109,11 @@ h1, h2, h3 {
 	height: 100%;
 	padding-bottom: 20px;
 	align-items: flex-end;
+}
+
+.cuadrito {
+	height: 220px;
+	border: solid;
 }
 
 #logo {
@@ -140,6 +145,7 @@ h1, h2, h3 {
 	text-transform: uppercase;
 	color: #000;
 }
+
 
 #logo{
 	font-family: sans-serif;
@@ -173,7 +179,7 @@ font-family: sans-serif;
 
 
 
-
+/*Gente, esta práctica no es buena. Usemos clases, sino cada vez que ponemos un <section> nos aparece este formato que no necesariamente queremos. Por ahora lo dejo. Leandro.*/
 section{
 	overflow: hidden;
 	display: flex;
@@ -200,7 +206,7 @@ section article{
 
 section article a{
 	float: right;
-	padding: 20px;
+	padding: 10px;
 	text-decoration: none;
 	color: #000;
 	background-color: orange;
@@ -209,9 +215,9 @@ section article a{
 /*------------------------------------------------------------------COMIENZO CARROUSEL------------------------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
+  max-width: 1250px;
   position: relative;
-  margin: auto;
+  margin: 0px;
 }
 
 /* Hide the images by default */
