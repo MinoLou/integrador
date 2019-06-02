@@ -8,7 +8,6 @@
   <body class="registro-body">
     <?php require('header.php'); ?>
 
-<<<<<<< HEAD
     <br>
     <br>
 
@@ -42,18 +41,6 @@
       <!--<input type="radio" name="genero" value="male" checked> Masculino<br>
       <input type="radio" name="genero" value="female"> Femenino<br>
       <input type="radio" name="genero" value="other"> Otro-->
-=======
-<section class="container">
-	<h2>Registrate como usuario</h2>
-</section>
-
-<section class="container">
-	<form class="" action="index.html" method="post">
-		User <input type="text" name="user" value="">
-		Password <input type="password" name="password" value="">
-		<input type="submit" name="enviar" value="Enviar">
-	</form>
->>>>>>> 80b2d3dc2f8ceba1d00187772356aca8b7e656cd
 
       <select class="redondeadocolor" name="sexo">
         <option value="Masculino">Masculino</option>

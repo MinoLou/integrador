@@ -30,7 +30,7 @@ h1, h2, h3 {
 	font-family: 'Crimson Text', serif;
 }
 
-.container {
+.containerb {
 	max-width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -100,14 +100,14 @@ h1, h2, h3 {
 	margin-right: auto;
 }
 
-.page-header {
+.page-headerb {
 	height: 100px; /*Se lo bajé de 160 a 100 porque me parecía mucho. Discutible. Firma: Leandro*/
 	margin-bottom: 0px;
 	background-image: url('../images/patron-ladrillos.jpg');
 	border-bottom: 1px solid #999;
 }
 
-.page-header-container {
+.page-header-containerb {
 	display: flex;
 	height: 100%;
 	padding-bottom: 20px;
@@ -178,14 +178,7 @@ font-family: sans-serif;
 }
 
 
-<<<<<<< HEAD
-=======
-
-
-
-
 /*Gente, esta práctica no es buena. Usemos clases, sino cada vez que ponemos un <section> nos aparece este formato que no necesariamente queremos. Por ahora lo dejo. Leandro.*/
->>>>>>> 80b2d3dc2f8ceba1d00187772356aca8b7e656cd
 section{
 	overflow: hidden;
 	display: flex;
@@ -272,12 +265,12 @@ input{
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlidesb {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prevb, .nextb {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -293,18 +286,18 @@ input{
 }
 
 /* Position the "next button" to the right */
-.next {
+.nextb {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prevb:hover, .nextb:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
-.text {
+.textb {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -315,7 +308,7 @@ input{
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.numbertextb {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -324,7 +317,7 @@ input{
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dotb {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -340,7 +333,7 @@ input{
 }
 
 /* Fading animation */
-.fade {
+.fadeb {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
