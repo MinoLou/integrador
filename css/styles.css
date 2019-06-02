@@ -23,6 +23,7 @@ body{
 	padding: 0;
 	background-size: cover;
 	background-color: #fcfcfc;
+
 }
 
 h1, h2, h3 {
@@ -169,11 +170,6 @@ font-family: sans-serif;
 }
 
 
-
-
-
-
-
 section{
 	overflow: hidden;
 	display: flex;
@@ -205,7 +201,52 @@ section article a{
 	color: #000;
 	background-color: orange;
 }
+	/* Centra el formulario*/
+.form{
+	text-align: center;
+}
 
+.form p{
+	font-size: 20px;
+}
+.blanco{
+	color: white;
+}
+
+input{
+
+	font-size: 20px;
+}
+/*Centra el titulo del registro*/
+.registro{
+	color: #FFF;
+	font-size: 40px;
+	text-align: center;
+	background-color: grey;
+	opacity: 0.6;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.registro-body{
+	background-image: url("../images/pared-ladrillos.jpg");
+}
+.redondeadocolor{
+	border-radius: 5px;
+  border: 1px solid #39c;
+	padding:5px;
+}
+
+.boton-registro{
+	border-radius: 5px;
+  border: 1px solid #39c;
+	background-color: #46cd4b;
+	color: white;
+	padding: 5px;
+}
+.sexo{
+	font-size: 50px;
+}
 /*------------------------------------------------------------------COMIENZO CARROUSEL------------------------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
