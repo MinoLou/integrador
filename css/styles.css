@@ -37,32 +37,34 @@ h1, h2, h3 {
 
 .profile-container {
 	overflow: hidden;
-	background-color: yellow;
+	background-color: white;
 }
 
 .side-menu {
-	background-color: yellow;
+	background-color: white; /*#c0c0c0*/
 	width: 15%;
 	height: 500px;
 	float: left;
 }
 
 .side-menu-button {
-	background-color: blue;
+	background-color: #909090;
 	width: 100%;
 	height: 50px;
 	padding: 5px;
 	color: white;
 	text-align: center;
+	border: solid gray;
+	margin-bottom: 1px;
 }
 
 .side-menu-button:hover {
-	background-color: red;
+	background-color: #a5a0a0;
 }
 
 .main-profile {
 	float: left;
-	background-color: yellow;
+	background-color: white;
 	width: 85%;
 	/*height: 500px;*/
 }
@@ -76,7 +78,7 @@ h1, h2, h3 {
 
 .service-tab {
 	width: 32%;
-	background-color: #00ffff;
+	background-color: #b5e7a0; /*#00ffff*/
 	border-radius: 3%;
 	height: 300px;
 	margin: 5px;
