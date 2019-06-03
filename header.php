@@ -12,6 +12,7 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/all.min.css">
     	<link rel="stylesheet" href="css/styles.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -31,4 +32,3 @@
     </div>
   </header>
   <!--<div class="container">--> <!-- NO DESCOMENTEN ESTA LINEA, POR EL AMOR DE DIOS!!!-->
-
