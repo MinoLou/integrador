@@ -8,7 +8,7 @@
   <body>
   <header class="page-headerb">
     <div class="page-header-containerb containerb">
-      <a id="logo" href="index.php"><img src="images/logocw_transp.png" alt="Logo"></a>
+      <a id="logo" href="index.php"><img src="images/C2_t.png" style="max-width:70%; height:auto; " alt="Logo"></a>
       <nav class="main-nav">
         <ul>
           <li><a class="nav-link nav1" href="preguntas.php">Preguntas Frecuentes</a></li>
