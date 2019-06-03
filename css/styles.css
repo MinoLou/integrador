@@ -272,9 +272,11 @@ input{
 /*------------------------------------------------------------------COMIENZO CARROUSEL------------------------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1920px;
-  position: relative;
-  margin: 0px;
+	position: relative;
+  max-width: 80%;
+  margin: 60px auto 0;
+	border: 10px solid #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4 );
 }
 
 /* Hide the images by default */
