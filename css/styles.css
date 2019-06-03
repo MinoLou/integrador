@@ -114,10 +114,7 @@ h1, h2, h3 {
 	align-items: flex-end;
 }
 
-.cuadrito {
-	height: 220px;
-	border: solid;
-}
+
 
 #logo {
 
@@ -177,38 +174,54 @@ font-family: sans-serif;
 
 }
 
-
-/*Gente, esta práctica no es buena. Usemos clases, sino cada vez que ponemos un <section> nos aparece este formato que no necesariamente queremos. Por ahora lo dejo. Leandro.*/
-section{
-	overflow: hidden;
+.iconos-home {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-top: 100px;
+	margin: 60px 0;
+}
+
+.intro-text {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+.intro-text h1 {
+	font-size: 42px;
+
+}
+
+.intro-text p {
+	font-size: 24px;
+}
+
+.description-box {
+	width: 33%;
+	text-align: center;
+}
+
+.description-box h3 {
+	font-size: 36px;
+}
+
+.description-box .fas,
+.description-box .fab {
+	font-size: 52px;
+	color: #e88f00;
+}
+
+.description-box p {
+	font-size: 18px;
+}
+
+.description-box a {
+	color: #e88f00;
 }
 
 article{
 	padding: 10px;
-}
-
-section article{
-	width: 40%;
-	height: 30vh;
-	background-color: white;
-	border: black 2px dashed;
-	margin: 5px;
-	float:left;
-	color: black;
-	text-align: justify;
-
-}
-
-section article a{
-	float: right;
-	padding: 10px;
-	text-decoration: none;
-	color: #000;
-	background-color: orange;
 }
 	/* Centra el formulario*/
 .form{
