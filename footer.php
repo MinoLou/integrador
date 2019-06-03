@@ -1,8 +1,9 @@
-<html>
+  </div>
   <footer class="page-footer">
-		<div style="background-color: black; height: 12vh;">
-		<p class="footer-legend" style="color: white; padding: 20px;">Copyright 2019 - The Bill Gates Group @ Digital House Lima.<br>Buenos Aires, Argentina <br>Todos los derechos reservados.<br>
-    <a href="contacto.php">Contacto</a><br></p>
-	</div>
-  </footer>
-  </html>
+    <div class="containerb">
+		  <p class="footer-legend">Copyright 2019 - The Bill Gates Group @ Digital House Lima.</p>
+      <p>Podes contactarnos <a href="contacto.php"> aqui </a></p>
+	   </div>
+   </footer>
+   </body>
+</html>

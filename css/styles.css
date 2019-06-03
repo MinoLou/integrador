@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 .containerb {
-	max-width: 1300px;
+	max-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -156,22 +156,15 @@ h1, h2, h3 {
 }
 
 .page-footer {
-	/*height: 80px;
 	width: auto;
-	margin-top: 100px;*/
+	margin-top: 100px;
+	padding-bottom: 40px;
 	background-image: url('../images/patron-ladrillos.jpg');
 	border-top: 1px solid #999;
-
 }
 
-footer a{
-	float: left;
-	color: #000;
-	padding-left: 25px;
-	padding-top: 20px;
-font-style: normal;
-font-family: sans-serif;
-
+.page-footer a{
+	color: orange;
 }
 
 .iconos-home {
