@@ -68,6 +68,7 @@
       <br>
       <input class="boton-registro"type="submit" name="enviar" value="Registrarme">
   </form>
+  <br><br>
 </div>
     <?php require('footer.php'); ?>
 
