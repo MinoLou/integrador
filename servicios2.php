@@ -23,3 +23,7 @@
 				</div>
 			</div>
 			<?php endforeach; ?>
+	</div>
+</div>
+
+<?php require('footer.php'); ?>

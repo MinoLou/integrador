@@ -1,6 +1,7 @@
 <?php require('header.php'); ?>
 
 <div>
+  <a href="contacto.php" style="font-size: 20px;">Contacto</a><br>
   <form method="post" action="formulario.php">
     <p>
     <br><label for="nombre">Nombre: </label>
@@ -20,4 +21,13 @@
   </form>
 </div>
 
-<?php require('footer.php'); ?>
+  <footer class="page-footer">
+    <div style="background-image: url('images/patron-ladrillos.jpg');">
+		<br><br><br><br><br><br><br>
+    </div>
+	<div style="background-color: black; height: 110px;">
+		<p class="footer-legend" style="color: white; padding: 20px;">Copyright 2019 - The Bill Gates Group @ Digital House Lima.<br>Buenos Aires, Argentina <br>Todos los derechos reservados.</p>
+	</div>
+  </footer>
+  </body>
+</html>
