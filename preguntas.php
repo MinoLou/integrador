@@ -106,7 +106,7 @@
 
 				<div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionPreguntas">
 					<div class="card-body">
-					Si vos o tu empresa quieren formar parte de Construworld, contactanos a ... y comenzaremos con el proceso de admisión.
+					Si vos o tu empresa quieren formar parte de Construworld, contactanos  <a href="contacto.php">aquí</a> y comenzaremos con el proceso de admisión.
 					</div>
 				</div>
 			</div>
