@@ -20,14 +20,12 @@
     </p>
   </form>
 </div>
-
-  <footer class="page-footer">
-    <div style="background-image: url('images/patron-ladrillos.jpg');">
-		<br><br><br><br><br><br><br>
-    </div>
-	<div style="background-color: black; height: 110px;">
-		<p class="footer-legend" style="color: white; padding: 20px;">Copyright 2019 - The Bill Gates Group @ Digital House Lima.<br>Buenos Aires, Argentina <br>Todos los derechos reservados.</p>
-	</div>
-  </footer>
-  </body>
+<br><br>
+<footer class="page-footer">
+  <div class="containerb">
+    <p class="footer-legend">Copyright 2019 - The Bill Gates Group @ Digital House Lima.</p>
+    <p>Podes contactarnos <a href="contacto.php"> aqui </a></p>
+   </div><br>
+ </footer>
+</body>
 </html>
