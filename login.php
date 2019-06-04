@@ -26,7 +26,7 @@ if ($_POST && strlen($_POST["user"]) == 0){
 <br>
 
 <div class="form">
-  <form class="" action="index.html" method="post">
+  <form class="" action="perfil.php" method="post">
     <!--<p class="blanco">Nombre Completo:</p>-->
       <p><input class="redondeadocolor" type="text" name="nombre" value="" placeholder="Nombre">
       <input class="redondeadocolor" type="text" name="apellido" value="" placeholder="Apellido"></p>
