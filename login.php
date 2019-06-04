@@ -5,20 +5,47 @@ if ($_POST && strlen($_POST["user"]) == 0){
 
  ?>
 
-<?php require('header.php'); ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+  </head>
+  <body class="registro-body">
+    <?php require('header.php'); ?>
 
-<section class="container">
-	<h2>Ingresá al sitio</h2>
-</section>
+    <br>
+    <br>
 
-<section class="container">
-	<form class="" action="index.html" method="post">
-		User <input type="text" name="user" value="">
-		Password <input type="password" name="password" value="">
-		<input type="submit" name="enviar" value="Enviar">
-	</form>
+    <p><h3 class="registro">Entrá, para que todos puedan contar con tus servicios</h3></p>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-</section>
-<br><br><br><br><br><br><br><br><br><br><br>
+<div class="form">
+  <form class="" action="index.html" method="post">
+    <!--<p class="blanco">Nombre Completo:</p>-->
+      <p><input class="redondeadocolor" type="text" name="nombre" value="" placeholder="Nombre">
+      <input class="redondeadocolor" type="text" name="apellido" value="" placeholder="Apellido"></p>
+      <br>
+      <br>
+      <br>
+	  <p><input class="redondeadocolor" type="email" name="email" value="" placeholder="E-mail"></p>
+      <br>
+      <!--<p class="blanco">Eleg� tu contrase�a</p>-->
+      <p><input class="redondeadocolor" type="password" name="password" value=""placeholder="Ingresá tu contraseña "></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <input class="boton-registro"type="submit" name="enviar" value="Entrar">
+  </form>
+  <br><br>
+</div>
+    <?php require('footer.php'); ?>
 
-<?php require('footer.php'); ?>
+  </body>
+</html>

@@ -24,7 +24,7 @@
       <nav class="main-nav">
         <ul>
           <li><a class="nav-link nav1" href="preguntas.php">Preguntas Frecuentes</a></li>
-          <li><a class="nav-link nav1" href="servicios.php">Servicios</a></li>
+          <li><a class="nav-link nav1" href="servicios2.php">Servicios</a></li>
           <li><a class="nav-link nav1" href="registro.php">Registracion</a></li>
           <li><a class="nav-link nav1" href="login.php">Login</a></li>
         </ul>
