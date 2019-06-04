@@ -1,13 +1,14 @@
-<?php require('header.php');
-	require_once 'serviceList.php';
+<?php
+require_once 'header.php';
+require_once 'serviceList.php';
   ?>
 
 <!-- Servicios -->
 <div class="container" style="margin-top:30px; margin-bottom: 30px;">
-  <div class="row">
+  <div class="row" align-items-center>
     <!-- Los servicios -->
     <?php foreach ($serviceList as $oneService) : ?>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
 				<div class="card">
 					<img src="images/<?= $oneService['image'] ?>" class="card-img-top" alt="imagen del servicio">
 					<div class="card-body">
