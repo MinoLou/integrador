@@ -1,7 +1,7 @@
 <?php require('header.php'); ?>
 
 <div> <!-- section hace bolonqui -->
-<h1>Preguntas frecuentes</h1>
+<h1 style="margin-left: 40px;">Preguntas frecuentes</h1>
 </div>
 		<div class="container">
 			<div class="row">

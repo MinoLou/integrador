@@ -1,8 +1,8 @@
 <?php require('header.php'); ?>
 
 <div>
-  <a href="contacto.php" style="font-size: 20px;">Contacto</a><br>
-  <form method="post" action="formulario.php">
+  <a href="contacto.php" style="font-size: 20px; margin-left: 30px;">Contacto</a><br>
+  <form method="post" action="formulario.php" style="margin-left: 30px;">
     <p>
     <br><label for="nombre">Nombre: </label>
     <input id="nombre" type="text" name="nombre">
@@ -23,8 +23,9 @@
 <br><br>
 <footer class="page-footer">
   <div class="containerb">
+	<br>
     <p class="footer-legend">Copyright 2019 - The Bill Gates Group @ Digital House Lima.</p>
-    <p>Podes contactarnos <a href="contacto.php"> aqui </a></p>
+    <p>Podés contactarnos <a href="contacto.php"> aquí </a></p>
    </div><br>
  </footer>
 </body>
