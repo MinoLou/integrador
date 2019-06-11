@@ -1,8 +1,9 @@
   <!--</div>-->
   <footer class="page-footer">
     <div class="containerb">
+			<br>
 		  <p class="footer-legend">Copyright 2019 - The Bill Gates Group @ Digital House Lima.</p>
-      <p>Podes contactarnos <a href="contacto.php"> aqui </a></p>
+      <p>Podés contactarnos <a href="contacto.php"> aquí </a></p>
 	   </div>
    </footer>
   </body>
