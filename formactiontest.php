@@ -40,6 +40,22 @@
 		var_dump($hash);
 	} else { echo "Pass y confirmación de pass no coinciden"; $valido = false;}
 	
+	//Lectura de archivo y chequeo de existencia previa de usuario
+	
+	$json_previo = file_get_contents("usuarios.json");
+		
+		//Prueba de funcionamiento
+		echo "<br>JSON Previo:";
+		var_dump($json_previo);
+		echo "<br>";
+	
+	$previo = json_decode($json_previo, true); //Hay que ponerle true para que devuelva arrays asoc y no objetos
+	
+		//Prueba de funcionamiento
+		echo "<br>Previo:";
+		var_dump($previo);
+		echo "<br>";
+	
 	//Creación de array asociativo de usuario
 	if($valido){
 		$campo_usuario = [
@@ -51,12 +67,29 @@
 				"hash" => $hash
 				]
 			];
-	$json = json_encode($campo_usuario);
-	echo "<br> JSON: <br>";
-	var_dump($json);
+			
+	//Agrego campo de array al array obtenido del json
+	
+	$cant_campos = sizeof($previo);
+	
+	echo "<br>Cantidad elementos array: ";
+	var_dump($cant_campos);
+	echo "<br>";
+	
+	$previo[2] = $campo_usuario[0];
+	
+	$json = json_encode($previo); //Vuelvo a codificar a JSON
+			
+	file_put_contents("usuarios.json", $json); //Escribo todo (con el agregado) en el archivo, pisando lo anterior
+			
+	//$json = json_encode($campo_usuario[0]);
+		echo "<br> JSON: <br>";
+		var_dump($json);
+	
+	//Hay que tomar el json, pasarlo a array, si no existe el usuario, agregarle un campo al array y luego pasarlo a json. No sirve appendear directamente el json porque el formato debe ser [{"campo":"valor", "campo":"valor"}, {"campo":"valor", "campo":"valor"}], y appendeando json te queda [{"campo":"valor", "campo":"valor"}], [{"campo":"valor", "campo":"valor"}]
 	
 	//Guardo registro en archivo (falta validar no existencia de usuario)
-	file_put_contents("usuarios.json", $json, FILE_APPEND);
+	//file_put_contents("usuarios.json", $json, FILE_APPEND);
 	}
 
 ?>
