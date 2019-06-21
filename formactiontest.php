@@ -70,13 +70,21 @@
 			
 	//Agrego campo de array al array obtenido del json
 	
-	$cant_campos = sizeof($previo);
+	$cant_campos = 0;
 	
 	echo "<br>Cantidad elementos array: ";
 	var_dump($cant_campos);
 	echo "<br>";
 	
-	$previo[2] = $campo_usuario[0];
+	foreach($previo as $clave => $valor){
+		echo "FOREACH: ";
+		var_dump($valor);
+		echo "<br>Cant campos:";
+		var_dump($cant_campos);
+		$cant_campos++;
+	}
+	
+	//$previo[2] = $campo_usuario[0];
 	
 	$json = json_encode($previo); //Vuelvo a codificar a JSON
 			
