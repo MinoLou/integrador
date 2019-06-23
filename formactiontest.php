@@ -1,8 +1,6 @@
-<?php
-	var_dump($_POST);
-	echo "<br> Soy formactiontest.php <br><br>";
-	
+<?php	
 	$valido = true;
+	$usuario_existe = false;
 	
 	if (strlen($_POST["nombre"]) > 0){
 		echo "Nombre ok <br>";
@@ -37,67 +35,46 @@
 	
 	if ($pass == $pass2){
 		$hash = password_hash($pass, PASSWORD_DEFAULT);
-		var_dump($hash);
+		//var_dump($hash);
+		echo "Hash calculado<br>";
 	} else { echo "Pass y confirmación de pass no coinciden"; $valido = false;}
 	
 	//Lectura de archivo y chequeo de existencia previa de usuario
 	
-	$json_previo = file_get_contents("usuarios.json");
-		
-		//Prueba de funcionamiento
-		echo "<br>JSON Previo:";
-		var_dump($json_previo);
-		echo "<br>";
+	$json_previo = file_get_contents("usuarios.json"); //Tomo el contenido del JSON
 	
-	$previo = json_decode($json_previo, true); //Hay que ponerle true para que devuelva arrays asoc y no objetos
-	
-		//Prueba de funcionamiento
-		echo "<br>Previo:";
-		var_dump($previo);
-		echo "<br>";
+	$previo = json_decode($json_previo, true); //Paso de JSON a array asociativo. Hay que ponerle true para que devuelva arrays asoc y no objetos
 	
 	//Creación de array asociativo de usuario
-	if($valido){
+	if($valido){ //Si no falló ninguna de las validaciones del nuevo usuario
 		$campo_usuario = [
-			0 => [
 				"nombre" => $nombre,
 				"usuario" => $usuario,
 				"pais" => $pais,
 				"email" => $email,
 				"hash" => $hash
-				]
 			];
 			
-	//Agrego campo de array al array obtenido del json
+		//Agrego campo de array al array obtenido del json
 	
-	$cant_campos = 0;
+		$cant_campos = 0;
 	
-	echo "<br>Cantidad elementos array: ";
-	var_dump($cant_campos);
-	echo "<br>";
+		foreach($previo as $valor){
+		
+			if ($usuario == $valor["usuario"]){ //Si ya existe un usuario con el nombre de usuario ingresado
+				$usuario_existe = true;
+				break;
+			}
+			$cant_campos++;
+		}
 	
-	foreach($previo as $clave => $valor){
-		echo "FOREACH: ";
-		var_dump($valor);
-		echo "<br>Cant campos:";
-		var_dump($cant_campos);
-		$cant_campos++;
+		if($usuario_existe == false){
+			$previo[$cant_campos] = $campo_usuario; //Agrego el nuevo usuario al JSON
+			$json = json_encode($previo); //Vuelvo a codificar a JSON		
+			file_put_contents("usuarios.json", $json); //Escribo todo (con el agregado) en el archivo, pisando lo anterior
+			echo "Usuario agregado<br>";
+		} else {
+			echo "Ese usuario ya existe<br>";
+		}		
 	}
-	
-	//$previo[2] = $campo_usuario[0];
-	
-	$json = json_encode($previo); //Vuelvo a codificar a JSON
-			
-	file_put_contents("usuarios.json", $json); //Escribo todo (con el agregado) en el archivo, pisando lo anterior
-			
-	//$json = json_encode($campo_usuario[0]);
-		echo "<br> JSON: <br>";
-		var_dump($json);
-	
-	//Hay que tomar el json, pasarlo a array, si no existe el usuario, agregarle un campo al array y luego pasarlo a json. No sirve appendear directamente el json porque el formato debe ser [{"campo":"valor", "campo":"valor"}, {"campo":"valor", "campo":"valor"}], y appendeando json te queda [{"campo":"valor", "campo":"valor"}], [{"campo":"valor", "campo":"valor"}]
-	
-	//Guardo registro en archivo (falta validar no existencia de usuario)
-	//file_put_contents("usuarios.json", $json, FILE_APPEND);
-	}
-
 ?>
