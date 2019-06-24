@@ -43,7 +43,9 @@
 	
 	$json_previo = file_get_contents("usuarios.json"); //Tomo el contenido del JSON
 	
-	$previo = json_decode($json_previo, true); //Paso de JSON a array asociativo. Hay que ponerle true para que devuelva arrays asoc y no objetos
+	if($json_previo){	//Si hay al menos un usuario
+		$previo = json_decode($json_previo, true); //Paso de JSON a array asociativo. Hay que ponerle true para que devuelva arrays asoc y no objetos
+	}
 	
 	//Creación de array asociativo de usuario
 	if($valido){ //Si no falló ninguna de las validaciones del nuevo usuario
@@ -59,6 +61,7 @@
 	
 		$cant_campos = 0;
 	
+	if($json_previo){
 		foreach($previo as $valor){
 		
 			if ($usuario == $valor["usuario"]){ //Si ya existe un usuario con el nombre de usuario ingresado
@@ -67,7 +70,7 @@
 			}
 			$cant_campos++;
 		}
-	
+	}
 		if($usuario_existe == false){
 			$previo[$cant_campos] = $campo_usuario; //Agrego el nuevo usuario al JSON
 			$json = json_encode($previo); //Vuelvo a codificar a JSON		
