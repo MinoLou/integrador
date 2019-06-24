@@ -25,10 +25,12 @@
 				$_SESSION["usuario"]=$valor["usuario"];
 				$_SESSION["pais"]=$valor["pais"];
 				$_SESSION["email"]=$valor["email"];
-				var_dump($_SESSION["nombre"]); echo "<br>";
-				var_dump($_SESSION["usuario"]); echo "<br>";
-				var_dump($_SESSION["pais"]); echo "<br>";
-				var_dump($_SESSION["email"]); echo "<br>";
+				$nombre = "Hola " . $_SESSION["usuario"];
+				echo $nombre;
+				//var_dump($_SESSION["nombre"]); echo "<br>";
+				//var_dump($_SESSION["usuario"]); echo "<br>";
+				//var_dump($_SESSION["pais"]); echo "<br>";
+				//var_dump($_SESSION["email"]); echo "<br>";
 			} else {
 				echo "No coincide pass<br>";
 				$usuario_encontrado = true;
@@ -40,3 +42,8 @@
 		echo "No se encontró usuario<br>";
 	}
 ?>
+
+<html>
+	<form action="cerrses.php">
+	<input type="submit" name="cerrar" value="cerrar">
+</html>
