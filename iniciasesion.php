@@ -20,10 +20,15 @@
 				echo "Inicio de sesión<br>";
 				$usuario_encontrado = true;
 				$sesion = true;
-				var_dump($valor["nombre"]); echo "<br>";
-				var_dump($valor["usuario"]); echo "<br>";
-				var_dump($valor["pais"]); echo "<br>";
-				var_dump($valor["email"]); echo "<br>";
+				session_start();
+				$_SESSION["nombre"]=$valor["nombre"];
+				$_SESSION["usuario"]=$valor["usuario"];
+				$_SESSION["pais"]=$valor["pais"];
+				$_SESSION["email"]=$valor["email"];
+				var_dump($_SESSION["nombre"]); echo "<br>";
+				var_dump($_SESSION["usuario"]); echo "<br>";
+				var_dump($_SESSION["pais"]); echo "<br>";
+				var_dump($_SESSION["email"]); echo "<br>";
 			} else {
 				echo "No coincide pass<br>";
 				$usuario_encontrado = true;
