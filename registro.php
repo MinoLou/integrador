@@ -19,7 +19,7 @@
 <br>
 
 <div class="form">
-  <form class="" action="index.html" method="post">
+  <form class="" action="registroaction.php" method="post">
     <!--<p class="blanco">Nombre Completo:</p>-->
       <p><input class="redondeadocolor" type="text" name="nombre" value="" placeholder="Nombre">
       <input class="redondeadocolor" type="text" name="apellido" value="" placeholder="Apellido"></p>
@@ -50,12 +50,15 @@
       <br>
       <br>
       <br>
-      <!--<p class="blanco">Elegí tu Ciudad:</p>-->
-      <p><input class="redondeadocolor" type="text" name="ciudad" value="" placeholder="Completá con tu Ciudad"></p>
+      <!--<p class="blanco">Elegí tu Nombre de Usuario:</p>-->
+      <p><input class="redondeadocolor" type="text" name="nombreusu" value="" placeholder="Nombre de Usuario"></p>
+      <br>
+      <!--<p class="blanco">Elegí tu País:</p>-->
+      <p><input class="redondeadocolor" type="text" name="pais" value="" placeholder="Completá con tu País"></p>
       <br>
       <!--<p class="blanco">Fecha de Nacimiento:</p>-->
-      <p><input class="redondeadocolor" type="text" name="fecha-nacimiento" value="" placeholder="Fecha de Nacimiento"></p>
-      <br>
+      <!--<p><input class="redondeadocolor" type="text" name="fecha-nacimiento" value="" placeholder="Fecha de Nacimiento"></p>
+      <br>-->
       <!--<p class="blanco">Completá con tu E-mail:</p>-->
       <p><input class="redondeadocolor" type="email" name="email" value="" placeholder="E-mail"></p>
       <br>
