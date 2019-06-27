@@ -31,17 +31,18 @@ if ($_POST && strlen($_POST["user"]) == 0){
       <p><input class="redondeadocolor" type="text" name="nombre" value="" placeholder="Nombre">
       <input class="redondeadocolor" type="text" name="apellido" value="" placeholder="Apellido"></p>
       <br>
+	  <input class="redondeadocolor" type="text" name="nombreusu" value="" placeholder="Usuario (obligat)"></p>
       <br>
       <br>
 	  <p><input class="redondeadocolor" type="email" name="email" value="" placeholder="E-mail"></p>
       <br>
       <!--<p class="blanco">Eleg� tu contrase�a</p>-->
-      <p><input class="redondeadocolor" type="password" name="password" value=""placeholder="Ingresá tu contraseña "></p>
+      <p><input class="redondeadocolor" type="password" name="pass" value=""placeholder="Ingresá tu contraseña "></p>
       <br>
       <br>
       <br>
       <br>
-      <input class="boton-registro"type="submit" name="enviar" value="Entrar">
+      <input class="boton-registro"type="submit" name="enviar" value="Ingresar como prestador">
   </form>
   <br><br>
 </div>
