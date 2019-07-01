@@ -38,6 +38,7 @@
 				$_SESSION["usuario"]=$valor["usuario"];
 				$_SESSION["pais"]=$valor["pais"];
 				$_SESSION["email"]=$valor["email"];
+				$_SESSION["ext"]=$valor["ext"]; //Se agregó la extensión de la foto al json 1-7-19
 				$nombre = "Hola " . $_SESSION["nombre"];
 				//echo $nombre;
 				//var_dump($_SESSION["nombre"]); echo "<br>";
@@ -69,7 +70,8 @@ echo "<div class='profile-container'>
 		</div>
 		<div class='main-profile'>
 			<br>";
-		 $imagenUsuario = $_SESSION["usuario"].".jpg";
+		 $extension = $_SESSION["ext"];
+		 $imagenUsuario = $_SESSION["usuario"].".".$extension;
 			//echo $imagenUsuario;
 
 		echo "<div class='main-profile'>
