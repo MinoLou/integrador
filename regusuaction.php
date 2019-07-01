@@ -104,6 +104,7 @@
 				
 			} else {
 				$mensaje_error = $mensaje_error . "Error carga foto de perfil<br>";
+				$valido = false;
 			}
 			
 			//Fin tratamiento imagen de perfil
