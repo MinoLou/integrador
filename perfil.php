@@ -9,9 +9,9 @@
 	$tipo_usuario = $_POST["enviar"];
 	$kind_of_user = "";
 	//echo $tipo_usuario;
-	
+
 	//Lectura de archivo y chequeo de existencia previa de usuario
-	
+
 	if($tipo_usuario == "Ingresar como usuario"){
 		$json_previo = file_get_contents("usuarios.json"); //Tomo el contenido del JSON de usuarios
 		$kind_of_user = "usuario";
@@ -19,12 +19,12 @@
 		$json_previo = file_get_contents("prestadores.json"); //Tomo el contenido del JSON de prestadores
 		$kind_of_user = "prestador";
 	} else {$mensaje_error = $mensaje_error . "No se identificó tipo de usuario<br>";}
-	
-	
+
+
 	$previo = json_decode($json_previo, true); //Paso de JSON a array asociativo. Hay que ponerle true para que devuelva arrays asoc y no objetos
-			
+
 	//Agrego campo de array al array obtenido del json
-	
+
 	foreach($previo as $valor){
 		if ($usuario == $valor["usuario"]){ //Si ya existe un usuario con el nombre de usuario ingresado
 			$mensaje_ok = $mensaje_ok . "Usuario encontrado<br>";
@@ -68,10 +68,19 @@ echo "<div class='profile-container'>
 			<div class='side-menu-button'>Item 6</div>
 		</div>
 		<div class='main-profile'>
-			<br>
-			<img class='profile-picture' src='images/bill_gates.jpg' alt='Bill'>;
-			<h2 style='text-align:center;'>"; echo($nombre); echo "</h2>
-			<h3 style='text-align:center;'>"; 
+			<br>";
+		 $imagenUsuario = $_SESSION["usuario"].".jpg";
+			//echo $imagenUsuario;
+
+		echo "<div class='main-profile'>
+			<br>";
+			if ($kind_of_user == "usuario"){
+				echo "<img class='profile-picture' height='200px' src='usuarios/"; echo $imagenUsuario; echo "' alt='Usuario'>";
+			} else if ($kind_of_user == "prestador"){
+				echo "<img class='profile-picture' height='200px' src='prestadores/"; echo $imagenUsuario; echo "' alt='Prestador'>";
+			}
+			echo "<h2 style='text-align:center;'>"; echo($nombre); echo "</h2>
+			<h3 style='text-align:center;'>";
 			echo ($_SESSION["nombre"]); echo "<br>";
 			echo ($_SESSION["usuario"]); echo "<br>";
 			echo ($_SESSION["pais"]); echo "<br>";
@@ -94,5 +103,5 @@ echo "<div class='profile-container'>
 <html>
 	<form action="log1.php">
 	<input type="submit" name="cerrar" value="cerrar">
-</html>  
+</html>
 <?php require('footer.php'); ?>

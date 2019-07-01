@@ -57,14 +57,7 @@
 	
 	//Creación de array asociativo de usuario
 	if($valido){ //Si no falló ninguna de las validaciones del nuevo usuario
-		$campo_usuario = [
-				"nombre" => $nombre,
-				"usuario" => $usuario,
-				"pais" => $pais,
-				"email" => $email,
-				"hash" => $hash
-			];
-			
+					
 		//Agrego campo de array al array obtenido del json
 	
 		$cant_campos = 0;
@@ -110,6 +103,14 @@
 			//Fin tratamiento imagen de perfil
 			
 			if($valido){
+				$campo_usuario = [
+					"nombre" => $nombre,
+					"usuario" => $usuario,
+					"pais" => $pais,
+					"email" => $email,
+					"hash" => $hash,
+					"ext" => $ext
+				];
 				$previo[$cant_campos] = $campo_usuario; //Agrego el nuevo usuario al JSON
 				$json = json_encode($previo); //Vuelvo a codificar a JSON		
 				file_put_contents("usuarios.json", $json); //Escribo todo (con el agregado) en el archivo, pisando lo anterior
