@@ -19,7 +19,7 @@
 <br>
 
 <div class="form">
-  <form class="" action="regusuaction.php" method="post">
+  <form class="" action="regusuaction.php" method="post" enctype="multipart/form-data">
     <!--<p class="blanco">Nombre Completo:</p>-->
       <p><input class="redondeadocolor" type="text" name="nombre" value="" placeholder="Nombre">
       <input class="redondeadocolor" type="text" name="apellido" value="" placeholder="Apellido"></p>
@@ -59,6 +59,8 @@
       <p><input class="redondeadocolor" type="password" name="rePassword" value="" placeholder="Reconfirmá tu contraseña acá"></p>
       <br>
       <br>
+	  <label for="archivo">Imagen de perfil (jpg, bmp): </label>
+		<input type="file" name="archivo"><br>
       <input class="boton-registro"type="submit" name="enviar" value="Registrarme">
   </form>
   <br><br>

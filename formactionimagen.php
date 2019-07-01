@@ -9,7 +9,7 @@
 		echo "La extensión es: " . $ext . "<br>";
 		
 		$miArchivo = dirname(__FILE__);
-		$miArchivo = $miArchivo. "\\" ."teQuedaPocoMacri.".$ext;
+		$miArchivo = $miArchivo. "\\". "usuarios" . "\\" ."teQuedaPocoMacri.".$ext;
 		
 		echo "miArchivo es: " . $miArchivo . "<br>";
 		

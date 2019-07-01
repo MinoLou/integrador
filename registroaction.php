@@ -81,12 +81,41 @@
 		}
 	}
 		if($usuario_existe == false){
-			$previo[$cant_campos] = $campo_usuario; //Agrego el nuevo usuario al JSON
-			$json = json_encode($previo); //Vuelvo a codificar a JSON		
-			file_put_contents("prestadores.json", $json); //Escribo todo (con el agregado) en el archivo, pisando lo anterior
-			//echo "Usuario agregado<br>";
+			
+			//Tratamiento de imagen de perfil
+			if($_FILES["archivo"]["error"] === UPLOAD_ERR_OK){
+				//echo "UPLOAD_ERR_OK";
+				$nombre_ar = $_FILES["archivo"]["name"];
+				$archivo = $_FILES["archivo"]["tmp_name"];
+				$ext = pathinfo($nombre_ar, PATHINFO_EXTENSION);
+		
+				//echo "La extensión es: " . $ext . "<br>";
+		
+				$miArchivo = dirname(__FILE__);
+				$miArchivo = $miArchivo. "\\". "prestadores" . "\\" .$usuario. ".".$ext; //El nombre de la foto es el nombre del prestador. Hay que crear el directorio.
+		
+				//echo "miArchivo es: " . $miArchivo . "<br>";
+				if($ext=="jpg" || $ext=="bmp"){
+					move_uploaded_file($archivo, $miArchivo);
+				} else {
+					$mensaje_error = $mensaje_error . "Formato de imagen incorrecto<br>";
+					$valido = false;
+				}
+				
+			} else {
+				$mensaje_error = $mensaje_error . "Error carga foto de perfil<br>";
+			}
+			
+			//Fin tratamiento imagen de perfil
+			
+			if($valido){
+				$previo[$cant_campos] = $campo_usuario; //Agrego el nuevo usuario al JSON
+				$json = json_encode($previo); //Vuelvo a codificar a JSON		
+				file_put_contents("prestadores.json", $json); //Escribo todo (con el agregado) en el archivo, pisando lo anterior
+				//echo "Usuario agregado<br>";
+			}
 		} else {
-			$mensaje_error = $mensaje_error . "Ese usuario ya existe<br>";
+			$mensaje_error = $mensaje_error . "Ese prestador ya existe<br>";
 		}		
 	}
 ?>
