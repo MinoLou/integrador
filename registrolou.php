@@ -21,7 +21,7 @@ $nacionalidades = [
     <br>
     <br>
 
-    <p><h3 class="registro">Registrate acá para poder contratar servicios</h3></p>
+    <p><h3 class="registro">Registrate acá para que todos puedan contar con tus servicios</h3></p>
 <br>
 <br>
 <br>
@@ -29,12 +29,23 @@ $nacionalidades = [
 <br>
 
 <div class="form">
-  <form class="" action="regusuaction.php" method="post" enctype="multipart/form-data">
+  <form class="" action="registroaction.php" method="post">
     <!--<p class="blanco">Nombre Completo:</p>-->
       <p><input class="redondeadocolor" type="text" name="nombre" value="" placeholder="Nombre">
       <input class="redondeadocolor" type="text" name="apellido" value="" placeholder="Apellido"></p>
       <br>
+    <!--<p class="blanco">Elegí tu Nombre de Usuario:</p>-->
+      <p><input class="redondeadocolor" type="text" name="nombreusu" value="" placeholder="Usuario">
       <br>
+      <br>
+      <p class="blanco">Elegí tu profesión</p>
+      <select class="redondeadocolor" name="profesion">
+        <option value="arquitecto">Arquitect@</option>
+        <option value="plomero">Plomer@</option>
+        <option value="maestro mayor de obra">Maestr@ mayor de Obr@</option>
+        <option value="gasista">Gasist@</option>
+        <option value="electricista">Electricist@</option>
+      </select>
       <br>
       <br>
       <p class="blanco">Sexo:</p>
@@ -49,11 +60,7 @@ $nacionalidades = [
       </select>
       <br>
       <br>
-      <br>
-	  <!--<p class="blanco">Elegí tu Nombre de Usuario:</p>-->
-      <p><input class="redondeadocolor" type="text" name="nombreusu" value="" placeholder="Nombre de Usuario"></p>
-      <br>
-       <!--<p class="blanco">Elegí tu País:</p>--> 
+      <!--<p class="blanco">Elegí tu País:</p>-->
       <p class="blanco">Nacionalidad</p>
       <p><select class="redondeadocolor" type="text" name="pais" value="" placeholder="Elegí un país"></p>
           <?php foreach ($nacionalidades as $key => $nacionalidad) : ?>
@@ -81,8 +88,6 @@ $nacionalidades = [
       <p><input class="redondeadocolor" type="password" name="rePassword" value="" placeholder="Reconfirmá tu contraseña acá"></p>
       <br>
       <br>
-	  <label for="archivo">Imagen de perfil (jpg, bmp): </label>
-		<input type="file" name="archivo"><br>
       <input class="boton-registro"type="submit" name="enviar" value="Registrarme">
   </form>
   <br><br>

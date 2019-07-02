@@ -1,3 +1,13 @@
+<?php
+$nacionalidades = [
+"AR" => "Argentina",
+"UY" => "Uruguay",
+"BR" => "Brasil",
+"PY" => "Paraguay",
+"CH" => "Chile "
+];
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -53,8 +63,20 @@
       <!--<p class="blanco">Elegí tu Nombre de Usuario:</p>-->
       <p><input class="redondeadocolor" type="text" name="nombreusu" value="" placeholder="Nombre de Usuario"></p>
       <br>
-      <!--<p class="blanco">Elegí tu País:</p>-->
-      <p><input class="redondeadocolor" type="text" name="pais" value="" placeholder="Completá con tu País"></p>
+       <!--<p class="blanco">Elegí tu País:</p>-->
+      <p class="blanco">Nacionalidad</p>
+      <p><select class="redondeadocolor" type="text" name="pais" value="" placeholder="Elegí un país"></p>
+          <?php foreach ($nacionalidades as $key => $nacionalidad) : ?>
+            <?php if($_GET['nacionalidades'] == $key) : ?>
+            <option value="<?=$key?>" selected><?=$nacionalidad?>
+            </option>
+          <?php else : ?>
+            <option value="<?=$key?>"><?=$nacionalidad?>
+            </option>
+          <?php endif; ?>
+          <?php endforeach; ?>
+        </select>
+      <br>
       <br>
       <!--<p class="blanco">Fecha de Nacimiento:</p>-->
       <!--<p><input class="redondeadocolor" type="text" name="fecha-nacimiento" value="" placeholder="Fecha de Nacimiento"></p>
