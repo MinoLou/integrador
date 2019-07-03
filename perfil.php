@@ -24,8 +24,8 @@
 	$previo = json_decode($json_previo, true); //Paso de JSON a array asociativo. Hay que ponerle true para que devuelva arrays asoc y no objetos
 
 	//Agrego campo de array al array obtenido del json
-
 	foreach($previo as $valor){
+		echo "<h1>" . $usuario . "</h1>";
 		if ($usuario == $valor["usuario"]){ //Si ya existe un usuario con el nombre de usuario ingresado
 			$mensaje_ok = $mensaje_ok . "Usuario encontrado<br>";
 			$hash = $valor["hash"]; //Levanto el hash para el usuario en cuestión del array que se levantó del JSON
@@ -99,7 +99,7 @@ echo "<div class='profile-container'>
 		<br>
 		<br>
 		<p><h3 class='registro'>"; echo($mensaje_error); echo "</h3></p>";
-		echo "<br><br><br><br><br><br><br><br><br>"; //Los malditos breaks
+		echo "<br><br><br><br><br><br><br><br>"; //Los malditos breaks
   }
 ?>
 <html>

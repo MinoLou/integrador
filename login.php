@@ -1,52 +1,24 @@
-<?php
-if ($_POST && strlen($_POST["user"]) == 0){
-   echo "Completa el usuario, por favor";
- }
+<?php require('header.php'); ?>
 
- ?>
+<div class="containerb">
+	<section class="registration-landing">
+		<h1>Login</h1>
+		<p>Entrá acá para que todos puedan contar con tus servicios o para contratar servicios</p>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Login</title>
-  </head>
-  <body class="registro-body">
-    <?php require('header.php'); ?>
-
-    <br>
-    <br>
-
-    <p><h3 class="registro">Entrá, para que todos puedan contar con tus servicios</h3></p>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class="form">
-  <form class="" action="perfil.php" method="post">
-    <!--<p class="blanco">Nombre Completo:</p>-->
-      <p><input class="redondeadocolor" type="text" name="nombre" value="" placeholder="Nombre">
-      <input class="redondeadocolor" type="text" name="apellido" value="" placeholder="Apellido"></p>
-      <br>
-	  <input class="redondeadocolor" type="text" name="nombreusu" value="" placeholder="Usuario (obligat)"></p>
-      <br>
-      <br>
-	  <p><input class="redondeadocolor" type="email" name="email" value="" placeholder="E-mail"></p>
-      <br>
-      <!--<p class="blanco">Eleg� tu contrase�a</p>-->
-      <p><input class="redondeadocolor" type="password" name="pass" value=""placeholder="Ingresá tu contraseña "></p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <input class="boton-registro"type="submit" name="enviar" value="Ingresar como prestador">
-  </form>
-  <br><br>
+    <form class="" action="perfil.php" method="post">
+      <div class="form-group">
+        <input class="form-control" type="text" name="nombreusu" value="" placeholder="Usuario">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="password" name="pass" value=""placeholder="Contraseña ">
+      </div>
+      <div class="form-check">
+        <input  class="form-check-input"type="checkbox" class="form-check-input" name="recordar" value="">
+        <label for="recordar" class="form-check-label">Recordarme?</label>
+      </div>
+      <input class="btn btn-success"type="submit" name="enviar" value="Ingresar como prestador">
+    </form>
+	</section>
 </div>
-    <?php require('footer.php'); ?>
 
-  </body>
-</html>
+<?php require('footer.php'); ?>

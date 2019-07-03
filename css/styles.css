@@ -269,6 +269,19 @@ input{
 	color: white;
 	padding: 5px;
 }
+
+.section-image {
+	width: 400px;
+	margin: 30px auto 30px 20px;
+	border: 10px solid #fff;
+	transform: rotate(-5deg);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4 );
+}
+
+.registration-landing .button-group {
+	margin-top: 50px;
+}
+
 .sexo{
 	font-size: 50px;
 }

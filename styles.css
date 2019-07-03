@@ -269,6 +269,15 @@ input{
 	color: white;
 	padding: 5px;
 }
+
+.button-group {
+	display: flex;
+}
+
+.registration-landing .button-group {
+	margin-top: 50px;
+}
+
 .sexo{
 	font-size: 50px;
 }
