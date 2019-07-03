@@ -1,5 +1,6 @@
 <?php
 $nacionalidades = [
+"00" => " ",
 "AR" => "Argentina",
 "UY" => "Uruguay",
 "BR" => "Brasil",
