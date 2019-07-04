@@ -25,13 +25,13 @@
 		$mensaje_ok = $mensaje_ok . "Mail ok <br>";
 	} else {$mensaje_error = $mensaje_error . "No ingresó formato de mail válido <br>"; $valido = false;}
 
-	if (strlen($_POST["password"]) >= 8){
+	if (strlen($_POST["password"]) >= 5 && preg_match('/\s/',$password) && preg_match('/DH/',$password)){
 		$mensaje_ok = $mensaje_ok . "Pass ok <br>";
-	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 8 caracteres <br>"; $valido = false;}
+	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;}
 
-	if (strlen($_POST["rePassword"]) >= 8){
+	if (strlen($_POST["password"]) >= 5 && preg_match('/\s/',$password) && preg_match('/DH/',$password)){
 		$mensaje_ok = $mensaje_ok . "Pass2 ok <br>";
-	} else {$mensaje_error = $mensaje_error . "Pass repetido debe tener al menos 8 caracteres <br>"; $valido = false;}
+	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;}
 
 	$nom = $_POST["nombre"];
 	$apel = $_POST["apellido"];
