@@ -3,6 +3,7 @@
 	$usuario_existe = false;
 	$mensaje_ok = "";
 	$mensaje_error = "";
+	$reboto_pass = false;
 
 	if (strlen($_POST["nombre"]) > 0){
 		$mensaje_ok = $mensaje_ok . "Nombre ok <br>";
@@ -17,27 +18,34 @@
 	} else {$mensaje_error = $mensaje_error . "Nombre usuario debe tener al menos 8 caracteres <br>"; $valido = false;}
 
 //SI ESTÁ ARRIBA TIRA ERROR
-//	if (strlen($_POST["pais"]) > 0){
-//		$mensaje_ok = $mensaje_ok . "País ok <br>";
-//	} else {$mensaje_error = $mensaje_error . "No ingresó país <br>"; $valido = false;}
+	if (strlen($_POST["pais"]) > 0){
+		$mensaje_ok = $mensaje_ok . "País ok <br>";
+	} else {$mensaje_error = $mensaje_error . "No ingresó país <br>"; $valido = false;}
 
 	if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 		$mensaje_ok = $mensaje_ok . "Mail ok <br>";
 	} else {$mensaje_error = $mensaje_error . "No ingresó formato de mail válido <br>"; $valido = false;}
 
-	if (strlen($_POST["password"]) >= 5 && preg_match('/\s/',$password) && preg_match('/DH/',$password)){
+	if (strlen($_POST["password"]) >= 5 && !preg_match('/\s/',$_POST["password"]) && preg_match('/DH/',$_POST["password"])){
 		$mensaje_ok = $mensaje_ok . "Pass ok <br>";
-	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;}
+	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>";
+			$valido = false;
+			$reboto_pass = true;
+	}
 
-	if (strlen($_POST["password"]) >= 5 && preg_match('/\s/',$password) && preg_match('/DH/',$password)){
+	if (strlen($_POST["rePassword"]) >= 5 && !preg_match('/\s/',$_POST["rePassword"]) && preg_match('/DH/',$_POST["rePassword"])){
 		$mensaje_ok = $mensaje_ok . "Pass2 ok <br>";
-	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;}
+	} else {
+			if($reboto_pass == false){ //Si rebotan pass y repetición de pass, sin esta variable muestra el mensaje dos veces
+				$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;
+			}
+	}
 
 	$nom = $_POST["nombre"];
 	$apel = $_POST["apellido"];
 	$nombre = $nom . " " . $apel;
 	$usuario = $_POST["nombreusu"];
-//	$pais = $_POST["pais"]; SI ESTÁ ACTIVO DA ERROR
+	$pais = $_POST["pais"]; // ACTIVO DA ERROR
 	$email = $_POST["email"];
 	$pass = $_POST["password"];
 	$pass2 = $_POST["rePassword"];

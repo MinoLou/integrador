@@ -3,6 +3,7 @@
 	$usuario_existe = false;
 	$mensaje_ok = "";
 	$mensaje_error = "";
+	$reboto_pass = false;
 
 	if (strlen($_POST["nombre"]) > 0){
 		$mensaje_ok = $mensaje_ok . "Nombre ok <br>";
@@ -24,13 +25,20 @@
 		$mensaje_ok = $mensaje_ok . "Mail ok <br>";
 	} else {$mensaje_error = $mensaje_error . "No ingresó formato de mail válido <br>"; $valido = false;}
 
-	if (strlen($_POST["password"]) >= 5 && preg_match('/\s/',$password) && preg_match('/DH/',$password)){
+	if (strlen($_POST["password"]) >= 5 && !preg_match('/\s/',$_POST["password"]) && preg_match('/DH/',$_POST["password"])){
 		$mensaje_ok = $mensaje_ok . "Pass ok <br>";
-	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;}
+	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>";
+			$valido = false;
+			$reboto_pass = true;
+	}
 
-	if (strlen($_POST["rePassword"]) >= 5 && preg_match('/\s/',$rePassword) && preg_match('/DH/',$rePassword)){
+	if (strlen($_POST["rePassword"]) >= 5 && !preg_match('/\s/',$_POST["rePassword"]) && preg_match('/DH/',$_POST["rePassword"])){
 		$mensaje_ok = $mensaje_ok . "Pass2 ok <br>";
-	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;}
+	} else {
+			if($reboto_pass == false){ //Si rebotan pass y repetición de pass, sin esta variable muestra el mensaje dos veces
+				$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'DH' <br>"; $valido = false;
+			}
+	}
 
 	$nom = $_POST["nombre"];
 	$apel = $_POST["apellido"];
