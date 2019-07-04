@@ -226,7 +226,11 @@ h1, h2, h3 {
 article{
 	padding: 10px;
 }
+
+
 	/* Centra el formulario*/
+
+
 .form{
 	text-align: center;
 }
@@ -244,17 +248,15 @@ input{
 }
 /*Centra el titulo del registro*/
 .registro{
-	color: #FFF;
+	color: black;
 	font-size: 40px;
+	font-style: sans serif italic;
 	text-align: center;
-	background-color: grey;
-	opacity: 0.6;
+  opacity: 0.6;
 	padding: 10px;
 	border-radius: 5px;
 }
 
-.registro-body{
-	background-image: url("../images/pared-ladrillos.jpg");
 }
 .redondeadocolor{
 	border-radius: 5px;
@@ -272,7 +274,7 @@ input{
 
 .section-image {
 	width: 400px;
-	margin: 30px auto 30px 20px;
+	margin: 30px auto 30px 10px;
 	border: 10px solid #fff;
 	transform: rotate(-5deg);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4 );
@@ -335,13 +337,17 @@ input{
 
 /* Caption text */
 .textb {
-  color: #f2f2f2;
-  font-size: 15px;
+
+  background-color: rgba(210, 215, 216, 0.50);
+  font-size: 17px;
+	font-style: italic;
+	font-family: sans-serif;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+
 }
 
 /* Number text (1/3 etc) */
