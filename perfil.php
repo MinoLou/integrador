@@ -25,7 +25,6 @@
 
 	//Agrego campo de array al array obtenido del json
 	foreach($previo as $valor){
-		echo "<h1>" . $usuario . "</h1>";
 		if ($usuario == $valor["usuario"]){ //Si ya existe un usuario con el nombre de usuario ingresado
 			$mensaje_ok = $mensaje_ok . "Usuario encontrado<br>";
 			$hash = $valor["hash"]; //Levanto el hash para el usuario en cuestión del array que se levantó del JSON
