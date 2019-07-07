@@ -287,11 +287,31 @@ input{
 .sexo{
 	font-size: 50px;
 }
+/*---------------------- servicios----------------------------------------*/
 
 .construction-icons {
+	margin: 20px 0;
 	color: orange;
 	font-size: 42px;
 	text-align: center;
+
+}
+
+.servicios-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+
+.card-body{
+	width: calc(100% / 3);
+	padding: 20px;
+	text-align: center;
+}
+
+.card-text{
+	font-size: 20px;
+	font-style:serif normal;
 }
 
 
