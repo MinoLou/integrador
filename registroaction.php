@@ -46,6 +46,7 @@
 	$usuario = $_POST["nombreusu"];
 	$pais = $_POST["pais"];
 	$email = $_POST["email"];
+	$profesion = $_POST["profesion"];
 	$pass = $_POST["password"];
 	$pass2 = $_POST["rePassword"];
 
@@ -116,6 +117,7 @@
 					"usuario" => $usuario,
 					"pais" => $pais,
 					"email" => $email,
+					"profesion" => $profesion,
 					"hash" => $hash,
 					"ext" => $ext
 				];

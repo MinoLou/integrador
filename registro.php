@@ -34,9 +34,10 @@ $nacionalidades = [
       <select class="form-control" name="profesion">
         <option value="arquitecto">Arquitect@</option>
         <option value="plomero">Plomer@</option>
-        <option value="maestro mayor de obra">Maestr@ mayor de Obr@</option>
+        <option value="maestro-mayor-de-obra">Maestr@ mayor de Obr@</option>
         <option value="gasista">Gasist@</option>
         <option value="electricista">Electricist@</option>
+        <option value="carpintero">Carpinter@</option>
       </select>
       <br>
       <br>
