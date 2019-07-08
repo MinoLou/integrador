@@ -5,7 +5,15 @@ require_once 'serviceList.php';
 
 <!-- Servicios -->
 <div class="containerb" >
-
+<?php 
+		session_start();
+		if(isset($_SESSION["usuario"])){
+			echo "Variables de sesión<br>"; 
+			echo ($_SESSION["nombre"]); echo "<br>";
+			echo ($_SESSION["usuario"]); echo "<br>";
+			echo ($_SESSION["pais"]); echo "<br>";
+			echo ($_SESSION["email"]); echo "<br>";
+  }?>
 <div class="servicios-list">
   <!-- Los servicios -->
   <?php foreach ($serviceList as $oneService) : ?>
@@ -20,5 +28,11 @@ require_once 'serviceList.php';
   <?php endforeach; ?>
   </div>
 </div>
-
+<?php
+if(isset($_SESSION["usuario"])){
+echo "<html>
+	<form action='log1.php'>
+	<input type='submit' name='cerrar' value='cerrar'>
+</html>";
+} ?>
 <?php require('footer.php'); ?>

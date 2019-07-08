@@ -88,9 +88,6 @@ echo "<div class='profile-container'>
 			echo ($_SESSION["email"]); echo "<br>";
 			echo "Tipo de usuario: "; echo ($kind_of_user); echo "<br>";
 			echo "</h3>
-			<p>Trabajos realizados: 10</p>
-			<p>Calificación: 10 ladrillos</p>
-			<p>Usuarios relacionados: Steve Jobs, Paul Allen, Bernardo Neustadt</p>
 		</div>
 	</div>";
 } else {
