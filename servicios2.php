@@ -8,11 +8,8 @@ require_once 'serviceList.php';
 <?php 
 		session_start();
 		if(isset($_SESSION["usuario"])){
-			echo "Variables de sesión<br>"; 
+			echo "Hola, "; 
 			echo ($_SESSION["nombre"]); echo "<br>";
-			echo ($_SESSION["usuario"]); echo "<br>";
-			echo ($_SESSION["pais"]); echo "<br>";
-			echo ($_SESSION["email"]); echo "<br>";
   }?>
 <div class="servicios-list" style="margin-top: 20px;">
   <!-- Los servicios -->

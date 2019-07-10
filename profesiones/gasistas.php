@@ -7,11 +7,8 @@ require_once '../serviceList.php';
   <?php 
 		session_start();
 		if(isset($_SESSION["usuario"])){
-			echo "Variables de sesión<br>"; 
+			echo "Hola, "; 
 			echo ($_SESSION["nombre"]); echo "<br>";
-			echo ($_SESSION["usuario"]); echo "<br>";
-			echo ($_SESSION["pais"]); echo "<br>";
-			echo ($_SESSION["email"]); echo "<br>";
   }?>
 <html>
 	<p class="registro">Listado de gasistas</p>
@@ -27,9 +24,9 @@ require_once '../serviceList.php';
 		
 		foreach($previo as $valor){
 			if($valor['profesion'] == 'gasista'){
-				echo "<p style='font-size: 20px'>". $valor['nombre'] . "<p><br>";
-				echo "<p style='font-size: 12px'>". $valor['pais'] . "<p><br>";
-				echo "<p style='font-size: 12px'>". "Puntuación: " . "<p><br>";
+				echo "<p style='font-size: 20px;'>". $valor['nombre'] . '&nbsp&nbsp&nbsp&nbsp' ."<a href='gestion.php?profesion=gasista&nombre=" .$valor['nombre']."'>Contactar</a></p></br>";
+				echo "<p style='font-size: 12px;'>". $valor['pais'] . "</p><br>";
+				echo "<p style='font-size: 12px;'>". "Puntuación: " . "</p><br>";
 				echo "<br>";
 			}
 		}
@@ -42,7 +39,7 @@ require_once '../serviceList.php';
 <?php
 if(isset($_SESSION["usuario"])){
 echo "<html>
-	<form action='log1.php'>
+	<form action='../log1.php'>
 	<input type='submit' name='cerrar' value='cerrar'>
 </html>";
 } ?>
