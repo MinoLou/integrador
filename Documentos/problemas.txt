@@ -1,0 +1,8 @@
+Proyecto integrador Digital House - ConstruWorld
+Grupo 4: Miño, Ibarguren, Maiquez, Binetti
+
+Problemas encontrados durante el desarrollo
+
+Dependiendo del servidor en el que se corra y del sistema operativo del mismo, las fotos de perfil son guardadas en el path correcto o no.
+En el servidor de desarrollo (Windows) las guarda en el path correcto (siempre y cuando las carpetas estén creadas), pero en algunos servidores 
+las guarda en el raíz y pone el path como nombre de la foto (Ej: "/usuarios/PinoSolanas.jpg")
