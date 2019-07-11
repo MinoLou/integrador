@@ -4,12 +4,6 @@ require_once '../serviceList.php';
   ?>
 
 <!-- Servicios -->
-  <?php 
-		session_start();
-		if(isset($_SESSION["usuario"])){
-			echo "Hola, "; 
-			echo ($_SESSION["nombre"]); echo "<br>";
-  }?>
 <html>
 	<p class="registro">Gestión de usuario <?= $_SESSION['nombre']?> con <?=$_GET['profesion']?> <?=$_GET['nombre']?></p>
 	

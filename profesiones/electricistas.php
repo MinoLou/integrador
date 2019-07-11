@@ -4,12 +4,6 @@ require_once '../serviceList.php';
   ?>
 
 <!-- Servicios -->
-  <?php 
-		session_start();
-		if(isset($_SESSION["usuario"])){
-			echo "Hola, "; 
-			echo ($_SESSION["nombre"]); echo "<br>";
-  }?>
 <html>
 	<p class="registro">Listado de electricistas</p>
 	<div style="margin-left: 20px;">

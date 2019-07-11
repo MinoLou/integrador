@@ -1,7 +1,9 @@
-<?php session_start();
+<?php 
+require('header_s.php');
 if(isset($_SESSION["usuario"])){
 	if($_GET["cerrar"]=="cerrar")
 	{
+		//echo "deseteando";
 		unset($_SESSION["nombre"]);
 		unset($_SESSION["usuario"]);
 		unset($_SESSION["pais"]);
@@ -13,11 +15,8 @@ if(isset($_SESSION["usuario"])){
 		//var_dump($_SESSION["email"]); echo "<br>";
 		//echo "Sesión cerrada";
 	}
-
 }
 ?>
-
-<?php require('header.php'); ?>
 
 <div class="containerb">
 	<section class="registration-landing">

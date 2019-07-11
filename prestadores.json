@@ -1,65 +1,101 @@
 [
     {
-        "nombre": "jose presta",
-        "usuario": "JosePresta",
-        "pais": "AR",
-        "email": "jose@asd.com",
-        "profesion": "arquitecto",
-        "hash": "$2y$10$QqKiSDZYpTqEilATiFjk9OyZVRGFEEMxU6x2lOjBAyRpXIBXje5k6",
+        "nombre": "Jose Prestador",
+        "usuario": "JosePrestador",
+        "pais": "Argentina",
+        "email": "jose@prestador.com",
+		"profesion": "mmo",
+        "hash": "$2y$10$0P5uPuYhIepqPK3WL9XDnOoUmp7eRGPzDIfpSyDg6Iu\/6qygwDhvC",
+        "ext": "bmp"
+    },
+    {
+        "nombre": "Homero Simpson",
+        "usuario": "HomerThompson",
+        "pais": "Estados Unidos",
+        "email": "homer@gmail.com",
+		"profesion": "arquitecto",
+        "hash": "$2y$10$JHyMelvQWgl3dPxCu1dH9OVjU4H64IQ0MFjtqeHuBiEWLb4mb48FC",
         "ext": "jpg"
     },
     {
-        "nombre": "pepepepepe pepepepepe",
-        "usuario": "pepepepe",
+        "nombre": "Jorge Rial",
+        "usuario": "JorgeRial",
         "pais": "AR",
-        "email": "pepe@pepe.com",
+        "email": "jorge@rial.com",
+		"profesion": "electricista",
+        "hash": "$2y$10$aXWKvh2koZZqzIvHlHdD5.wQyoyAxcXvCjh0pNFJtCeDo1jShD2nK",
+        "ext": "bmp"
+    },
+    {
+        "nombre": "C\u00e9sar Pelli",
+        "usuario": "CesarPelli",
+        "pais": "AR",
+        "email": "cesar@pelli.com",
+        "profesion": "arquitecto",
+        "hash": "$2y$10$XiknnJ0\/zBYW5cQ2VUqh9uip.\/Rt.5sdA6gZCjJumQGJelEu5rVLW",
+        "ext": "jpg"
+    },
+	{
+        "nombre": "Jose Prestador",
+        "usuario": "JosePrestador",
+        "pais": "Argentina",
+        "email": "jose@prestador.com",
+		"profesion": "carpintero",
+        "hash": "$2y$10$0P5uPuYhIepqPK3WL9XDnOoUmp7eRGPzDIfpSyDg6Iu\/6qygwDhvC",
+        "ext": "bmp"
+    },
+    {
+        "nombre": "Federico Klemm",
+        "usuario": "FreddieKlemm",
+        "pais": "Estados Unidos",
+        "email": "homer@gmail.com",
+		"profesion": "maestro-mayor-de-obra",
+        "hash": "$2y$10$JHyMelvQWgl3dPxCu1dH9OVjU4H64IQ0MFjtqeHuBiEWLb4mb48FC",
+        "ext": "jpg"
+    },
+    {
+        "nombre": "Jorge Gas",
+        "usuario": "JorgeGas",
+        "pais": "AR",
+        "email": "jorge@rial.com",
+		"profesion": "gasista",
+        "hash": "$2y$10$aXWKvh2koZZqzIvHlHdD5.wQyoyAxcXvCjh0pNFJtCeDo1jShD2nK",
+        "ext": "bmp"
+    },
+    {
+        "nombre": "Joe Plumber",
+        "usuario": "JoePlumber",
+        "pais": "AR",
+        "email": "cesar@pelli.com",
         "profesion": "plomero",
-        "hash": "$2y$10$iL0nE150ofYk1H8V1SSExellwmzdGmtfGDHjcxQU0TbwGp9pmXADm",
+        "hash": "$2y$10$XiknnJ0\/zBYW5cQ2VUqh9uip.\/Rt.5sdA6gZCjJumQGJelEu5rVLW",
+        "ext": "jpg"
+    },
+	    {
+        "nombre": "Freddie Mercury",
+        "usuario": "FreddieMercury",
+        "pais": "Inglaterra",
+        "email": "homer@gmail.com",
+		"profesion": "gasista",
+        "hash": "$2y$10$JHyMelvQWgl3dPxCu1dH9OVjU4H64IQ0MFjtqeHuBiEWLb4mb48FC",
         "ext": "jpg"
     },
     {
-        "nombre": "prestador1 prestador1",
-        "usuario": "prestador1",
+        "nombre": "Antoni Gaudi",
+        "usuario": "AntoGaudi",
         "pais": "AR",
-        "email": "prestador@uno.com",
-        "profesion": "gasista",
-        "hash": "$2y$10$uPSKjiWMuyYLbYL1UErwnetTtWtdvfI5egjus4Ikg0FDFgp\/20yNO",
-        "ext": "jpg"
+        "email": "jorge@rial.com",
+		"profesion": "arquitecto",
+        "hash": "$2y$10$aXWKvh2koZZqzIvHlHdD5.wQyoyAxcXvCjh0pNFJtCeDo1jShD2nK",
+        "ext": "bmp"
     },
     {
-        "nombre": "sebastian sebastian",
-        "usuario": "sebastiansebastian",
+        "nombre": "Mauricio Gacri",
+        "usuario": "MauGacri",
         "pais": "AR",
-        "email": "sebastian@sebastian.com",
-        "profesion": "arquitecto",
-        "hash": "$2y$10$dbouyaHupvo5zcC3t7lKj.ae6RptC28Czze85Icq391HSWHcT.K62",
-        "ext": "jpg"
-    },
-    {
-        "nombre": "Un Arquitecto Apellido",
-        "usuario": "unarquitecto",
-        "pais": "AR",
-        "email": "unarquitecto@asd.com",
-        "profesion": "arquitecto",
-        "hash": "$2y$10$.\/wzOCCT2k7kDosHsAP67O58CQWROX3ZIwd.c.EYPIMyD4aytuN3O",
-        "ext": "jpg"
-    },
-    {
-        "nombre": "Maestro Apellido",
-        "usuario": "maestrotest",
-        "pais": "AR",
-        "email": "maestrotest@asd.com",
-        "profesion": "arquitecto",
-        "hash": "$2y$10$tZK7lwxqgWpRPK337jpd3.vL1Ru8enxhqWXn1zCerRqhJQS7ZmSHu",
-        "ext": "jpg"
-    },
-    {
-        "nombre": "Jose Perez",
-        "usuario": "joseperez",
-        "pais": "AR",
-        "email": "joseperez@asd.com",
-        "profesion": "arquitecto",
-        "hash": "$2y$10$Zd9wcs2IXarLOiigk2l8n.YEtn6pGgtIPReucIiaIuP6Q0FbaxGrC",
+        "email": "cesar@pelli.com",
+        "profesion": "maestro-mayor-de-obra",
+        "hash": "$2y$10$XiknnJ0\/zBYW5cQ2VUqh9uip.\/Rt.5sdA6gZCjJumQGJelEu5rVLW",
         "ext": "jpg"
     }
 ]

@@ -1,5 +1,5 @@
 
-    <?php require('header.php'); ?>
+    <?php require('header_s.php'); ?>
 
     <div class="containerb">
 

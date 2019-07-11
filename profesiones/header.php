@@ -20,15 +20,31 @@
   <header class="page-headerb">
     <div class="page-header-containerb containerb">
       <!--<a id="logo" href="index.php">ConstruWorld</a>-->
-	  <a id="logo" href="../index.php" style="padding-left: 20px;"><img src="images/C2_t.png" style="max-width:80%; height:auto; " alt="Logo"></a>
+	  <a id="logo" href="index.php" style="padding-left: 20px;"><img src="images/C2_t.png" style="max-width:80%; height:auto; " alt="Logo"></a>
       <nav class="main-nav">
         <ul>
-          <li><a class="nav-link nav1" href="../preguntas.php">Preguntas Frecuentes</a></li>
-          <li><a class="nav-link nav1" href="../servicios2.php">Servicios</a></li>
-          <li><a class="nav-link nav1" href="../reg1.php">Registracion</a></li>
-          <li><a class="nav-link nav1" href="../log1.php">Login</a></li>
+          <li><a class="nav-link nav1" href="preguntas.php">Preguntas Frecuentes</a></li>
+          <li><a class="nav-link nav1" href="servicios2.php">Servicios</a></li>
+          <li><a class="nav-link nav1" href="reg1.php">Registracion</a></li>
+          <li><a class="nav-link nav1" href="log1.php">Login</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!--<div class="container">--> <!-- NO DESCOMENTEN ESTA LINEA, POR EL AMOR DE DIOS!!!-->
+<!-- Menú cuando usuario está logueado -->
+<?php
+		session_start();
+		if(isset($_SESSION["nombre"])){
+		echo "<ul class='menu-usuario'>
+			<li class='dropdown-menu-usuario'>
+				<a href='javascript:void(0)' class='dropbtn-menu-usuario'>Mi ConstruWorld</a>
+				<div class='dropdown-content-mu'>
+					<a class='submenu-mu' href='perfil.php'>Perfil</a>
+					<a class='submenu-mu' href='#'>Cerrar Sesi&oacuten</a>
+				</div>
+			<li class='dropdown-menu-usuario'><a class='submenu-mu' href='#home'>Hola, "; echo $_SESSION["nombre"]; echo "</a></li>
+			</li>
+		</ul>";
+}
+?>

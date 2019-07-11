@@ -1,0 +1,65 @@
+[
+    {
+        "nombre": "jose presta",
+        "usuario": "JosePresta",
+        "pais": "AR",
+        "email": "jose@asd.com",
+        "profesion": "arquitecto",
+        "hash": "$2y$10$QqKiSDZYpTqEilATiFjk9OyZVRGFEEMxU6x2lOjBAyRpXIBXje5k6",
+        "ext": "jpg"
+    },
+    {
+        "nombre": "pepepepepe pepepepepe",
+        "usuario": "pepepepe",
+        "pais": "AR",
+        "email": "pepe@pepe.com",
+        "profesion": "plomero",
+        "hash": "$2y$10$iL0nE150ofYk1H8V1SSExellwmzdGmtfGDHjcxQU0TbwGp9pmXADm",
+        "ext": "jpg"
+    },
+    {
+        "nombre": "prestador1 prestador1",
+        "usuario": "prestador1",
+        "pais": "AR",
+        "email": "prestador@uno.com",
+        "profesion": "gasista",
+        "hash": "$2y$10$uPSKjiWMuyYLbYL1UErwnetTtWtdvfI5egjus4Ikg0FDFgp\/20yNO",
+        "ext": "jpg"
+    },
+    {
+        "nombre": "sebastian sebastian",
+        "usuario": "sebastiansebastian",
+        "pais": "AR",
+        "email": "sebastian@sebastian.com",
+        "profesion": "arquitecto",
+        "hash": "$2y$10$dbouyaHupvo5zcC3t7lKj.ae6RptC28Czze85Icq391HSWHcT.K62",
+        "ext": "jpg"
+    },
+    {
+        "nombre": "Un Arquitecto Apellido",
+        "usuario": "unarquitecto",
+        "pais": "AR",
+        "email": "unarquitecto@asd.com",
+        "profesion": "arquitecto",
+        "hash": "$2y$10$.\/wzOCCT2k7kDosHsAP67O58CQWROX3ZIwd.c.EYPIMyD4aytuN3O",
+        "ext": "jpg"
+    },
+    {
+        "nombre": "Maestro Apellido",
+        "usuario": "maestrotest",
+        "pais": "AR",
+        "email": "maestrotest@asd.com",
+        "profesion": "arquitecto",
+        "hash": "$2y$10$tZK7lwxqgWpRPK337jpd3.vL1Ru8enxhqWXn1zCerRqhJQS7ZmSHu",
+        "ext": "jpg"
+    },
+    {
+        "nombre": "Jose Perez",
+        "usuario": "joseperez",
+        "pais": "AR",
+        "email": "joseperez@asd.com",
+        "profesion": "arquitecto",
+        "hash": "$2y$10$Zd9wcs2IXarLOiigk2l8n.YEtn6pGgtIPReucIiaIuP6Q0FbaxGrC",
+        "ext": "jpg"
+    }
+]

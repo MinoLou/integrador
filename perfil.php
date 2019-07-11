@@ -1,5 +1,9 @@
 <?php
-	require('header.php');
+require('header.php');
+//session_start();
+if(!isset($_SESSION["nombre"])){ //Si no se grabaron las variables de sesión aún
+//Si viene del formulario de login y aun no se setearon las variables de sesión. Si viene de otro lado, como por ejemplo del botón "Mi perfil", es porque //la sesión está iniciada, y consiguientemente las variables de sesión seteadas. En tal caso, directamente va a la parte de sesión.
+
 	$usuario = $_POST["nombreusu"];
 	$pass = $_POST["pass"];
 	$sesion = false;
@@ -15,9 +19,11 @@
 	if($tipo_usuario == "Ingresar como usuario"){
 		$json_previo = file_get_contents("usuarios.json"); //Tomo el contenido del JSON de usuarios
 		$kind_of_user = "usuario";
+		$_SESSION["kind_of_user"] = "usuario";
 	} else if ($tipo_usuario == "Ingresar como prestador"){
 		$json_previo = file_get_contents("prestadores.json"); //Tomo el contenido del JSON de prestadores
 		$kind_of_user = "prestador";
+		$_SESSION["kind_of_user"] = "prestador";
 	} else {$mensaje_error = $mensaje_error . "No se identificó tipo de usuario<br>";}
 
 
@@ -32,13 +38,28 @@
 				$mensaje_ok = $mensaje_ok . "Inicio de sesión<br>";
 				$usuario_encontrado = true;
 				$sesion = true;
-				session_start();
+				//session_start();
 				$_SESSION["nombre"]=$valor["nombre"];
 				$_SESSION["usuario"]=$valor["usuario"];
 				$_SESSION["pais"]=$valor["pais"];
 				$_SESSION["email"]=$valor["email"];
 				$_SESSION["ext"]=$valor["ext"]; //Se agregó la extensión de la foto al json 1-7-19
+				$_SESSION["kind_of_user"] = $kind_of_user;
 				$nombre = "Hola " . $_SESSION["nombre"];
+				
+				//En el header se dibuja la barra de usuario (Hola, usuario -- Mi ConstruWorld) solo si están seteadas las variables de sesión.
+				//Como cuando el usuario recién se loguea, las variables de sesión no están seteadas, hay que setear las variables y dibujar la barra
+				echo "<ul class='menu-usuario'>
+			<li class='dropdown-menu-usuario'>
+				<a href='javascript:void(0)' class='dropbtn-menu-usuario'>Mi ConstruWorld</a>
+				<div class='dropdown-content-mu'>
+					<a class='submenu-mu' href='perfil.php'>Perfil</a>
+					<a class='submenu-mu' href='#'>Cerrar Sesi&oacuten</a>
+				</div>
+			<li class='dropdown-menu-usuario'><a class='submenu-mu' href='#home'>Hola, "; echo $_SESSION["nombre"]; echo "</a></li>
+			</li>
+		</ul>";
+				
 				//echo $nombre;
 				//var_dump($_SESSION["nombre"]); echo "<br>";
 				//var_dump($_SESSION["usuario"]); echo "<br>";
@@ -54,11 +75,11 @@
 	if($usuario_encontrado == false){
 		$mensaje_error = $mensaje_error . "No se encontró usuario<br>";
 	}
-?>
+} else {$sesion = true;} //Si entra en else es porque están seteadas las variables de sesión (a juzgar por $_SESSION["nombre"]). Entonces setea $sesion
+						//para que entre en la parte que "dibuja" el perfil de usuario -if($sesion)-.
 
-
-<?php if($sesion){
-echo "<div class='profile-container'>
+if($sesion){
+	echo "<div class='profile-container'>
 		<div class='side-menu'>
 			<div class='side-menu-button'>Item 1</div>
 			<div class='side-menu-button'>Item 2</div>
@@ -75,18 +96,18 @@ echo "<div class='profile-container'>
 
 		echo "<div class='main-profile'>
 			<br>";
-			if ($kind_of_user == "usuario"){
+			if ($_SESSION["kind_of_user"] == "usuario"/*$kind_of_user == "usuario"*/){
 				echo "<img class='profile-picture' height='200px' src='usuarios/"; echo $imagenUsuario; echo "' alt='Usuario'>";
-			} else if ($kind_of_user == "prestador"){
+			} else if ($_SESSION["kind_of_user"] == "prestador"/*$kind_of_user == "prestador"*/){
 				echo "<img class='profile-picture' height='200px' src='prestadores/"; echo $imagenUsuario; echo "' alt='Prestador'>";
 			}
-			echo "<h2 style='text-align:center;'>"; echo($nombre); echo "</h2>
+			echo "<h2 style='text-align:center;'>"; echo($_SESSION["nombre"]); echo "</h2>
 			<h3 style='text-align:center;'>";
 			echo ($_SESSION["nombre"]); echo "<br>";
 			echo ($_SESSION["usuario"]); echo "<br>";
 			echo ($_SESSION["pais"]); echo "<br>";
 			echo ($_SESSION["email"]); echo "<br>";
-			echo "Tipo de usuario: "; echo ($kind_of_user); echo "<br>";
+			echo "Tipo de usuario: "; echo ($_SESSION["kind_of_user"]/*$kind_of_user*/); echo "<br>";
 			echo "</h3>
 		</div>
 	</div>";

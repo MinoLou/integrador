@@ -5,12 +5,7 @@ require_once 'serviceList.php';
 
 <!-- Servicios -->
 <div class="containerb" >
-<?php 
-		session_start();
-		if(isset($_SESSION["usuario"])){
-			echo "Hola, "; 
-			echo ($_SESSION["nombre"]); echo "<br>";
-  }?>
+
 <div class="servicios-list" style="margin-top: 20px;">
   <!-- Los servicios -->
   <?php foreach ($serviceList as $oneService) : ?>
