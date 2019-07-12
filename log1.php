@@ -1,5 +1,6 @@
 <?php 
 require('header_s.php');
+session_start();
 if(isset($_SESSION["usuario"])){
 	if($_GET["cerrar"]=="cerrar")
 	{

@@ -1,6 +1,7 @@
 <?php
 require_once 'header.php';
 require_once 'serviceList.php';
+//echo "Variables que deberian no estar seteadas: "; echo $_SESSION["nombre"];echo $_SESSION["email"];
   ?>
 
 <!-- Servicios -->
