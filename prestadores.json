@@ -4,7 +4,7 @@
         "usuario": "JosePrestador",
         "pais": "Argentina",
         "email": "jose@prestador.com",
-		"profesion": "mmo",
+		"profesion": "maestros-mayores-de-obra",
         "hash": "$2y$10$0P5uPuYhIepqPK3WL9XDnOoUmp7eRGPzDIfpSyDg6Iu\/6qygwDhvC",
         "ext": "bmp"
     },
@@ -13,7 +13,7 @@
         "usuario": "HomerThompson",
         "pais": "Estados Unidos",
         "email": "homer@gmail.com",
-		"profesion": "arquitecto",
+		"profesion": "arquitectos",
         "hash": "$2y$10$JHyMelvQWgl3dPxCu1dH9OVjU4H64IQ0MFjtqeHuBiEWLb4mb48FC",
         "ext": "jpg"
     },
@@ -22,7 +22,7 @@
         "usuario": "JorgeRial",
         "pais": "AR",
         "email": "jorge@rial.com",
-		"profesion": "electricista",
+		"profesion": "electricistas",
         "hash": "$2y$10$aXWKvh2koZZqzIvHlHdD5.wQyoyAxcXvCjh0pNFJtCeDo1jShD2nK",
         "ext": "bmp"
     },
@@ -31,7 +31,7 @@
         "usuario": "CesarPelli",
         "pais": "AR",
         "email": "cesar@pelli.com",
-        "profesion": "arquitecto",
+        "profesion": "arquitectos",
         "hash": "$2y$10$XiknnJ0\/zBYW5cQ2VUqh9uip.\/Rt.5sdA6gZCjJumQGJelEu5rVLW",
         "ext": "jpg"
     },
@@ -40,7 +40,7 @@
         "usuario": "JosePrestador",
         "pais": "Argentina",
         "email": "jose@prestador.com",
-		"profesion": "carpintero",
+		"profesion": "carpinteros",
         "hash": "$2y$10$0P5uPuYhIepqPK3WL9XDnOoUmp7eRGPzDIfpSyDg6Iu\/6qygwDhvC",
         "ext": "bmp"
     },
@@ -49,7 +49,7 @@
         "usuario": "FreddieKlemm",
         "pais": "Estados Unidos",
         "email": "homer@gmail.com",
-		"profesion": "maestro-mayor-de-obra",
+		"profesion": "maestros-mayores-de-obra",
         "hash": "$2y$10$JHyMelvQWgl3dPxCu1dH9OVjU4H64IQ0MFjtqeHuBiEWLb4mb48FC",
         "ext": "jpg"
     },
@@ -58,7 +58,7 @@
         "usuario": "JorgeGas",
         "pais": "AR",
         "email": "jorge@rial.com",
-		"profesion": "gasista",
+		"profesion": "gasistas",
         "hash": "$2y$10$aXWKvh2koZZqzIvHlHdD5.wQyoyAxcXvCjh0pNFJtCeDo1jShD2nK",
         "ext": "bmp"
     },
@@ -67,7 +67,7 @@
         "usuario": "JoePlumber",
         "pais": "AR",
         "email": "cesar@pelli.com",
-        "profesion": "plomero",
+        "profesion": "plomeros",
         "hash": "$2y$10$XiknnJ0\/zBYW5cQ2VUqh9uip.\/Rt.5sdA6gZCjJumQGJelEu5rVLW",
         "ext": "jpg"
     },
@@ -76,7 +76,7 @@
         "usuario": "FreddieMercury",
         "pais": "Inglaterra",
         "email": "homer@gmail.com",
-		"profesion": "gasista",
+		"profesion": "gasistas",
         "hash": "$2y$10$JHyMelvQWgl3dPxCu1dH9OVjU4H64IQ0MFjtqeHuBiEWLb4mb48FC",
         "ext": "jpg"
     },
@@ -85,7 +85,7 @@
         "usuario": "AntoGaudi",
         "pais": "AR",
         "email": "jorge@rial.com",
-		"profesion": "arquitecto",
+		"profesion": "arquitectos",
         "hash": "$2y$10$aXWKvh2koZZqzIvHlHdD5.wQyoyAxcXvCjh0pNFJtCeDo1jShD2nK",
         "ext": "bmp"
     },
@@ -94,7 +94,7 @@
         "usuario": "MauGacri",
         "pais": "AR",
         "email": "cesar@pelli.com",
-        "profesion": "maestro-mayor-de-obra",
+        "profesion": "maestros-mayores-de-obra",
         "hash": "$2y$10$XiknnJ0\/zBYW5cQ2VUqh9uip.\/Rt.5sdA6gZCjJumQGJelEu5rVLW",
         "ext": "jpg"
     }

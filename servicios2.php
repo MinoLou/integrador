@@ -15,7 +15,7 @@ require_once 'serviceList.php';
         <i class="fa fa-<?= $oneService['icon'] ?>"></i>
       </div>
     	<p class="card-text"><?= substr($oneService['description'], 0, 150) ?>...</p>
-      <a href="profesiones/<?= $oneService['file'] ?>?profesion=<?= $oneService['profesion'] ?>">Ver mas</a>
+      <a href="profesiones.php?profesion=<?= $oneService['profesion'] ?>">Ver mas</a>
   	</div>
   <?php endforeach; ?>
   </div>
