@@ -1,0 +1,18 @@
+Listado de usuarios de prueba
+
+MirthaLegrand	mirthaDH
+
+
+
+Listado de prestadores de prueba
+
+JosePrestador	jjjjjjjj (se dio de alta cuando no había controles de clave)
+HomerThompson	hhhhhhhh (no sé por qué no anda la foto)
+JorgeRial		jorgeDH
+CesarPelli		cesarDH
+FreddieKlemm	fedeDH
+JorgeGas		jorgeDH
+JoePlumber		joeDH
+FreddieMercury	freddieDH
+AntoGaudi		antoDH
+MauGacri		mauDH
