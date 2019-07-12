@@ -35,15 +35,6 @@
         "hash": "$2y$10$XiknnJ0\/zBYW5cQ2VUqh9uip.\/Rt.5sdA6gZCjJumQGJelEu5rVLW",
         "ext": "jpg"
     },
-	{
-        "nombre": "Jose Prestador",
-        "usuario": "JosePrestador",
-        "pais": "Argentina",
-        "email": "jose@prestador.com",
-		"profesion": "carpinteros",
-        "hash": "$2y$10$0P5uPuYhIepqPK3WL9XDnOoUmp7eRGPzDIfpSyDg6Iu\/6qygwDhvC",
-        "ext": "bmp"
-    },
     {
         "nombre": "Federico Klemm",
         "usuario": "FreddieKlemm",
