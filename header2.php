@@ -27,7 +27,15 @@
           <li><a class="nav-link nav1" href="servicios2.php">Servicios</a></li>
 		  
 		  <?php
-			session_start();
+			//session_start(); 
+			/* Esto diferencia a header2.php de header.
+			
+			Resulta que en header.php se agregó una condición para preguntar si está seteada la variable $_SESSION["usuario"], es decir 'si se inició sesión'
+			y en tal caso no muestra REGISTRACION y LOGIN. Pero resulta que ni bien te logueás vas a perfil.php que de entrada incluía al header antes de setear las 
+			variables de sesión. Ergo, se mostraba en esa página REGISTRACION y LOGIN a pesar de estar iniciada la sesión. La solución encontrada fue incluir el header.php
+			luego se iniciar sesión y setear las variables (que no se pueden setear sin iniciar sesión), pero resulta que entonces, como header.php inicia sesión, luego
+			se estaría iniciando sesión dos veces. Para evitar esto, se replicó header.php en header2.php, solo que este último no inicia sesión*/
+			
 			if(!isset($_SESSION["nombre"])){ //Si no hay sesión iniciada (a juzgar por seteo de variables), muestra REGISTRACION y LOGIN
 				echo "<li><a class='nav-link nav1' href='reg1.php'>Registracion</a></li>
 				<li><a class='nav-link nav1' href='log1.php'>Login</a></li>";
