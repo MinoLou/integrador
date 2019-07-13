@@ -110,6 +110,7 @@ if($sesion){
 			echo "Tipo de usuario: "; echo ($_SESSION["kind_of_user"]/*$kind_of_user*/); echo "<br>";
 			echo "</h3>
 		</div>
+	</div>
 	</div>";
 } else {
 	  echo "<body class='registro-body'>
@@ -119,8 +120,5 @@ if($sesion){
 		echo "<br><br><br><br><br><br><br><br>"; //Los malditos breaks
   }
 ?>
-<html>
-	<form action="log1.php">
-	<input type="submit" name="cerrar" value="cerrar">
-</html>
+
 <?php require('footer.php'); ?>

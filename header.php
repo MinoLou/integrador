@@ -41,7 +41,7 @@
 				<a href='javascript:void(0)' class='dropbtn-menu-usuario'>Mi ConstruWorld</a>
 				<div class='dropdown-content-mu'>
 					<a class='submenu-mu' href='perfil.php'>Perfil</a>
-					<a class='submenu-mu' href='#'>Cerrar Sesi&oacuten</a>
+					<a class='submenu-mu' href='log1.php?cerrar=cerrar'>Cerrar Sesi&oacuten</a>
 				</div>
 			<li class='dropdown-menu-usuario'><a class='submenu-mu' href='#home'>Hola, "; echo $_SESSION["nombre"]; echo "</a></li>
 			</li>
