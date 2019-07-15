@@ -30,12 +30,4 @@ require_once 'serviceList.php';
 	</div>
 </html>
 
-<?php
-if(isset($_SESSION["usuario"])){
-echo "<html>
-	<form action='../log1.php'>
-	<input type='submit' name='cerrar' value='cerrar'>
-</html>";
-} ?>
-
 <?php require('footer.php'); ?>
