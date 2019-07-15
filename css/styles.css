@@ -285,6 +285,33 @@ input{
 .sexo{
 	font-size: 50px;
 }
+
+/*---------------------- servicios----------------------------------------*/
+.construction-icons {
+	margin: 20px 0;
+	color: orange;
+	font-size: 42px;
+	text-align: center;
+}
+ 
+.servicios-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+ 
+ 
+.card-body{
+	width: calc(100% / 3);
+	padding: 20px;
+	text-align: center;
+}
+ 
+.card-text{
+	font-size: 20px;
+	font-style:serif normal;
+}
+
 /*------------------------------------------------------------------COMIENZO CARROUSEL------------------------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
@@ -337,6 +364,10 @@ input{
 .textb {
   color: #f2f2f2;
   font-size: 15px;
+  background-color: rgba(210, 215, 216, 0.50); /*Recomposición estilos de Noe*/
+  font-size: 17px; 				/*Recomposición estilos de Noe*/
+  font-style: italic;			/*Recomposición estilos de Noe*/
+  font-family: sans-serif;		/*Recomposición estilos de Noe*/
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
