@@ -101,7 +101,7 @@ h1, h2, h3 {
 }
 
 .page-headerb {
-	height: 130px; /*Se lo bajé de 160 a 100 porque me parecía mucho. Discutible. Firma: Leandro*/
+	height: 130px; /*Se lo bajé de 160 a 100 porque me parecía mucho. Discutible. Firma: Leandro 130*/
 	margin-bottom: 0px;
 	background-image: url('../images/patron-ladrillos.jpg');
 	border-bottom: 1px solid #999;
@@ -472,3 +472,14 @@ input{
   display: block;
 }
 /*--------------------------FIN NAVBAR------------------------------*/
+
+@media (max-width: 750px) {
+	.page-headerb {
+		height: 150px;
+	}
+	
+	.nav1 {
+		max-width: 140px;
+		text-align: right;
+	}
+}
